@@ -1,0 +1,3 @@
+{"id": "MV-092023", "summary": "Peltier module overheat error E19", "priority": "medium", "error_code": "E19", "created": "2026-10-28T13:51:16.335755"}
+{"id": "MV-ABE2C9", "summary": "Water under cabinet and burning smell, E07 CO2 sensor drift", "priority": "high", "error_code": "E07", "created": "2026-10-28T13:51:20.908827"}
+{"id": "MV-823039", "summary": "E07 CO2 sensor drift after recalibration persists", "priority": "medium", "error_code": "E07", "created": "2026-10-28T13:51:25.313358"}

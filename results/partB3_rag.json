@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "question": "My display shows E07. What should I do?",
+    "answer": "[Section: 7. Error Codes]\nMove the unit to fresh air (or open a window), empty the chamber, then hold FAN + LIGHT for 5 s. Recalibration takes 8 minutes."
+  },
+  {
+    "id": 2,
+    "question": "What humidity for Lion's Mane?",
+    "answer": "[Section: 5. Cultivation Profiles (Fruiting stage)]\nLion's Mane | 18–21 | 94 | 700 | 8"
+  },
+  {
+    "id": 3,
+    "question": "Can I clean the inside with bleach?",
+    "answer": "[Section: 6. Maintenance] Never use chlorine bleach: chlorine vapour permanently damages the NDIR CO2 sensor and voids the warranty."
+  },
+  {
+    "id": 4,
+    "question": "How often should I change the filter?",
+    "answer": "[Section: 6. Maintenance]\nReplace the HEPA H13 filter every 90 days (part no. MV-F13)."
+  },
+  {
+    "id": 5,
+    "question": "Can I use tap water?",
+    "answer": "[Section: 3. Installation] \nFill the reservoir with distilled or demineralised water only; tap water causes white mineral dust on mushrooms and blocks the humidifier membrane."
+  },
+  {
+    "id": 6,
+    "question": "The app can't find my device, my router is 5 GHz only.",
+    "answer": "NOT_IN_MANUAL"
+  },
+  {
+    "id": 7,
+    "question": "How long is the warranty?",
+    "answer": "[Section: 9. Warranty and Service]\nThe MV-200 has a 24-month warranty from the date of purchase."
+  },
+  {
+    "id": 8,
+    "question": "My Lion's Mane looks like coral with long strings.",
+    "answer": "[Section: 5. Cultivation Profiles (Fruiting stage)] \n\nLion's Mane develops long, stringy \"teeth\" and coral shapes if CO2 exceeds 700 ppm – increase FAE using the FAN button (level 3 or higher)."
+  },
+  {
+    "id": 9,
+    "question": "How do I descale the humidifier?",
+    "answer": "[Section: 6. Maintenance]\n- Descale the humidifier every 30 days with a 5 % citric acid solution: fill the reservoir, run the program CLEAN (MODE + FAN, 3 s) for 15 minutes, then rinse twice with distilled water."
+  },
+  {
+    "id": 10,
+    "question": "What does E12 mean?",
+    "answer": "[Section: 7. Error Codes]\nE12 | Contamination detected by SporeEye | The unit enters Quarantine Mode (FAE stops, door lock on). Wear an FFP2 mask, remove and seal the affected block in a bag, disinfect the chamber, then press OK to exit Quarantine."
+  }
+]

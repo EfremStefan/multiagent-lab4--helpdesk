@@ -1,0 +1,16 @@
+﻿11 chunks (chunk size 900), manual sha256 1c59b30d4a5e...
+
+Query: E07
+  0.627  [7. Error Codes]  chunk 7
+  0.540  [7. Error Codes]  chunk 8
+  0.526  [9. Warranty and Service]  chunk 10
+
+Query: lion's mane humidity
+  0.666  [5. Cultivation Profiles (Fruiting stage)]  chunk 5
+  0.570  [2. Technical Specifications]  chunk 2
+  0.545  [1. Product Overview]  chunk 1
+
+Query: bleach
+  0.498  [5. Cultivation Profiles (Fruiting stage)]  chunk 5
+  0.492  [9. Warranty and Service]  chunk 10
+  0.481  [8. Safety]  chunk 9

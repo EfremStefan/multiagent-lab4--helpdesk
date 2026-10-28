@@ -1,0 +1,1393 @@
+{
+  "baseline": {
+    "summary": {
+      "fact_accuracy_string": 0.17592592592592593,
+      "fact_accuracy_judge": 0.22685185185185183,
+      "refusal_correctness": 0.0,
+      "false_refusals": 0,
+      "escalation_precision": null,
+      "escalation_recall": 0.0,
+      "escalation_f1": null,
+      "priority_correct": null,
+      "hit_at_k": null,
+      "mean_seconds": 3.133155725000324,
+      "mean_llm_calls": 1.0
+    },
+    "rows": [
+      {
+        "id": 1,
+        "question": "My display shows E07. What should I do?",
+        "answer": "The E07 error code is a common issue with the MV-200. It indicates that the cabinet's temperature control system has detected a fault in the heating element. This could be due to a variety of reasons, such as a faulty heating element, a malfunctioning temperature sensor, or a problem with the cabinet's electrical connections.\n\nTo troubleshoot the issue, I recommend the following steps:\n\n1. Check the power cord and connections: Ensure that the power cord is securely connected to both the cabinet and the wall outlet. Also, verify that the circuit breaker or fuse hasn't tripped.\n2. Check the temperature setting: Make sure the temperature setting is within the recommended range (55°F to 65°F) for optimal mushroom growth.\n3. Check the heating element: Inspect the heating element for any signs of damage, such as burn marks or corrosion. If you suspect a problem, please contact our support team for further assistance.\n4. Check the temperature sensor: The temperature sensor is usually located near the heating element. If it's damaged or dirty, it may cause the E07 error. Try cleaning the sensor with a soft brush or replacing it if necessary.\n5. Check the cabinet's software: Ensure that the cabinet's software is up to date. You can check for updates on our website or through the MycoVault app.\n\nIf none of these steps resolve the issue, please contact our support team, and we'll be happy to assist you further. We may need to schedule a remote diagnosis or send a replacement part to resolve the issue.\n\nWould you like me to guide you through any of these steps or would you like to proceed with contacting our support team?",
+        "seconds": 6.200263900005666,
+        "llm_calls": 1,
+        "retrieved_sections": [],
+        "ticket": null,
+        "trace": null,
+        "facts_string": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "facts_judge": [
+          false,
+          false,
+          true,
+          false
+        ]
+      },
+      {
+        "id": 2,
+        "question": "What humidity for Lion's Mane?",
+        "answer": "Lion's Mane (Hericium erinaceus) is a wonderful species to cultivate, and the MycoVault MV-200 is an excellent cabinet for it.\n\nFor optimal growth, Lion's Mane prefers a relatively high humidity environment. We recommend maintaining a humidity level of 80-90% during the first 2-3 weeks of colonization, and then gradually reducing it to 60-70% as the mycelium colonizes the substrate.\n\nAfter the mycelium has fully colonized the substrate, you can reduce the humidity to 50-60% to promote fruiting body formation. However, be sure to maintain a consistent humidity level to prevent the mycelium from drying out.\n\nIt's also essential to ensure good air exchange in the cabinet to prevent the buildup of CO2 and maintain a healthy environment for the mycelium.\n\nWould you like me to walk you through the steps to set up your MV-200 for Lion's Mane cultivation?",
+        "seconds": 3.680454000001191,
+        "llm_calls": 1,
+        "retrieved_sections": [],
+        "ticket": null,
+        "trace": null,
+        "facts_string": [
+          false
+        ],
+        "facts_judge": [
+          false
+        ]
+      },
+      {
+        "id": 3,
+        "question": "Can I clean the inside with bleach?",
+        "answer": "I would strongly advise against using bleach to clean the inside of your MycoVault MV-200 mushroom growing cabinet. Bleach is a harsh chemical that can damage the cabinet's materials and harm the mycelium (mushroom roots) that you're trying to cultivate.\n\nThe MycoVault MV-200 is designed with a specific focus on creating a sterile and controlled environment for mushroom growth. Bleach can disrupt the delicate balance of the cabinet's ecosystem and potentially harm the mycelium, leading to reduced yields or even contamination.\n\nInstead, I recommend using a gentle cleaning solution specifically designed for cleaning mushroom growing equipment. We offer a MycoVault Cleaning Kit that's specifically formulated to clean and sanitize the cabinet without harming the mycelium.\n\nIf you're looking for a more DIY approach, you can mix 1 part white vinegar with 10 parts water in a spray bottle. Spray the solution onto the surfaces, let it sit for 10-15 minutes, and then wipe clean with a soft cloth. This solution is gentle and effective at removing any debris or contaminants without harming the mycelium.\n\nRemember to always follow the manufacturer's guidelines for cleaning and maintenance to ensure the longevity and performance of your MycoVault MV-200. If you have any further questions or concerns, feel free to ask!",
+        "seconds": 3.7571532000001753,
+        "llm_calls": 1,
+        "retrieved_sections": [],
+        "ticket": null,
+        "trace": null,
+        "facts_string": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "facts_judge": [
+          true,
+          false,
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "id": 4,
+        "question": "How often should I change the filter?",
+        "answer": "The filter in your MycoVault MV-200 is a crucial component in maintaining a healthy and optimal environment for your mushroom cultivation. We recommend changing the filter every 2-3 months, or as needed, depending on the level of usage and the type of mycelium you're growing.\n\nHere are some signs that indicate it's time to change the filter:\n\n1. Reduced air flow: If you notice a decrease in air circulation within the cabinet, it may be a sign that the filter is clogged.\n2. Increased humidity: If the humidity levels inside the cabinet are consistently higher than the set point, it could be due to a dirty filter.\n3. Visible mold or contamination: If you notice any visible signs of mold or contamination on the filter or within the cabinet, it's time to change the filter.\n\nTo ensure optimal performance, we recommend the following filter change schedule:\n\n* Every 2-3 months for normal usage (1-2 harvests per month)\n* Every 1-2 months for heavy usage (3-4 harvests per month)\n* Every 4-6 months for light usage (1 harvest per 2-3 months)\n\nRemember to always follow proper filter replacement procedures to avoid any potential contamination risks. If you're unsure about changing the filter or have any questions, feel free to reach out to our support team for assistance.\n\nWould you like to know more about filter maintenance or have any other questions about your MycoVault MV-200?",
+        "seconds": 4.231124300000374,
+        "llm_calls": 1,
+        "retrieved_sections": [],
+        "ticket": null,
+        "trace": null,
+        "facts_string": [
+          false,
+          false
+        ],
+        "facts_judge": [
+          false,
+          false
+        ]
+      },
+      {
+        "id": 5,
+        "question": "Can I use tap water?",
+        "answer": "For optimal results with your MycoVault MV-200, we recommend using filtered or purified water for the substrate and irrigation. Tap water can contain impurities and minerals that may affect the mycelium's growth and the overall quality of the mushrooms.\n\nIf you do choose to use tap water, we recommend letting it sit for 24-48 hours to allow any chlorine or heavy metals to dissipate. However, keep in mind that this may not completely remove all impurities.\n\nWe also offer a water filtration system as an optional accessory for the MV-200, which can help remove impurities and minerals from the water. This can be a good option if you plan on using tap water regularly.\n\nWould you like more information on the water filtration system or would you like to discuss other options for water purification?",
+        "seconds": 2.3982888999962597,
+        "llm_calls": 1,
+        "retrieved_sections": [],
+        "ticket": null,
+        "trace": null,
+        "facts_string": [
+          true,
+          false,
+          true
+        ],
+        "facts_judge": [
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "id": 6,
+        "question": "The app can't find my device, my router is 5 GHz only.",
+        "answer": "The MV-200 does support 2.4 GHz connectivity, but it's possible that the device might be set to 5 GHz by default. Let me walk you through the steps to check and adjust the Wi-Fi settings on your MycoVault.\n\nFirst, please check the MV-200's display to see if it's currently connected to a network. If it's not, you can try the following:\n\n1. Press and hold the \"Settings\" button on the MV-200 until the display lights up.\n2. Use the navigation buttons to select \"Network\" and then \"Settings\".\n3. Look for the \"Wi-Fi\" option and select it.\n4. Check if the \"Wi-Fi Frequency\" is set to 2.4 GHz. If it's not, you can try changing it to 2.4 GHz.\n\nIf you're unable to change the Wi-Fi frequency on the device, you can also try the following:\n\n1. Unplug the MV-200 from the power outlet.\n2. Wait for 10-15 seconds.\n3. Plug the MV-200 back in and turn it on.\n4. The device should automatically reset its Wi-Fi settings, including the frequency.\n\nOnce you've made these adjustments, try restarting the MycoVault app on your device and see if it can find the MV-200. If you're still having trouble, feel free to let me know and I'll be happy to assist you further!",
+        "seconds": 4.5011541999992914,
+        "llm_calls": 1,
+        "retrieved_sections": [],
+        "ticket": null,
+        "trace": null,
+        "facts_string": [
+          true
+        ],
+        "facts_judge": [
+          false
+        ]
+      },
+      {
+        "id": 7,
+        "question": "How long is the warranty?",
+        "answer": "The MycoVault MV-200 mushroom growing cabinet comes with a comprehensive warranty that protects your investment for a period of 5 years from the date of purchase. This warranty covers defects in materials and workmanship, and it's backed by our dedicated customer support team.\n\nDuring this 5-year period, you'll be eligible for repair or replacement of any defective parts, as well as technical support and troubleshooting assistance. We're committed to ensuring that your MycoVault MV-200 continues to perform optimally and provide you with a successful mushroom cultivation experience.\n\nIt's worth noting that the warranty is non-transferable and only applies to the original purchaser. However, we do offer an optional extended warranty program that can provide additional protection for up to 10 years. Would you like more information on this program?",
+        "seconds": 2.5402495999951498,
+        "llm_calls": 1,
+        "retrieved_sections": [],
+        "ticket": null,
+        "trace": null,
+        "facts_string": [
+          false
+        ],
+        "facts_judge": [
+          false
+        ]
+      },
+      {
+        "id": 8,
+        "question": "My Lion's Mane looks like coral with long strings.",
+        "answer": "That's a great start! Lion's Mane mushrooms (Hericium erinaceus) are known for their unique appearance, and it sounds like your mycelium is developing as expected.\n\nThe \"coral-like\" appearance you're describing is a common stage in the growth of Lion's Mane. The mycelium will often form a dense, white mass that resembles coral or a fuzzy ball. As the mycelium grows, it will start to produce long, thin tendrils or \"hairs\" that can give it a stringy or wispy appearance.\n\nThis is a normal part of the growth process, and it's a sign that your mycelium is healthy and active. With proper care and conditions, your Lion's Mane should start to produce the characteristic \"spines\" or \"hairs\" that give the mushroom its distinctive appearance.\n\nTo encourage further growth, I recommend checking the following:\n\n* Make sure the MV-200 cabinet is at the optimal temperature range (55-65°F) and humidity level (50-70%) for Lion's Mane.\n* Ensure that the mycelium is receiving adequate light. While Lion's Mane can grow in low-light conditions, it will benefit from some indirect light.\n* Check the substrate moisture level. Lion's Mane prefers a moist environment, but overwatering can lead to issues.\n\nIf you have any further questions or concerns, feel free to ask! I'm here to help you troubleshoot and ensure the best possible growth for your Lion's Mane.",
+        "seconds": 4.7298138000041945,
+        "llm_calls": 1,
+        "retrieved_sections": [],
+        "ticket": null,
+        "trace": null,
+        "facts_string": [
+          false,
+          false,
+          false
+        ],
+        "facts_judge": [
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "id": 9,
+        "question": "How do I descale the humidifier?",
+        "answer": "The humidifier in your MycoVault MV-200 is a crucial component for maintaining the optimal humidity levels for mushroom growth. Descaling the humidifier is an essential maintenance task to prevent mineral buildup and ensure it continues to function properly.\n\nTo descale the humidifier, you'll need to use a mixture of water and a descaling solution specifically designed for humidifiers. Here's a step-by-step guide:\n\n1. **Turn off and unplug the MycoVault**: Before you start, make sure the cabinet is turned off and unplugged from the power source.\n2. **Remove the humidifier tank**: Take out the humidifier tank from the cabinet. You may need to twist and pull it gently to release it from its holder.\n3. **Mix the descaling solution**: Combine 1 part descaling solution with 4 parts water in a bowl. You can use a product like CLR or a descaling solution specifically designed for humidifiers.\n4. **Soak the humidifier**: Submerge the humidifier in the descaling solution mixture and let it soak for 2-3 hours. This will help loosen any mineral deposits.\n5. **Rinse thoroughly**: After soaking, remove the humidifier from the solution and rinse it thoroughly with clean water to remove any remaining descaling solution.\n6. **Reassemble and refill**: Once the humidifier is clean, reassemble it and refill it with fresh water. Make sure to check the water level regularly to maintain the optimal humidity levels.\n7. **Repeat the process**: If you live in an area with hard water, you may need to descale the humidifier every 1-2 months to prevent mineral buildup.\n\nRemember to always follow the manufacturer's instructions for the descaling solution you're using, and take necessary safety precautions to avoid any accidents.\n\nIf you have any further questions or concerns, feel free to ask!",
+        "seconds": 5.783358100001351,
+        "llm_calls": 1,
+        "retrieved_sections": [],
+        "ticket": null,
+        "trace": null,
+        "facts_string": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "facts_judge": [
+          false,
+          false,
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "id": 10,
+        "question": "What does E12 mean?",
+        "answer": "In the context of the MycoVault MV-200, E12 refers to the type of LED grow light that is installed in the cabinet. Specifically, it's a 12-watt LED grow light with a specific spectrum designed for optimal mycelium growth and mushroom cultivation.\n\nThe E12 light is a popular choice among MycoVault users because it provides a balanced spectrum that promotes healthy mycelium development, fruiting body formation, and overall mushroom growth. It's also energy-efficient and produces minimal heat, making it an ideal choice for indoor mushroom cultivation.\n\nIf you have any questions about the E12 light or would like more information on how to optimize its use in your MycoVault, feel free to ask!",
+        "seconds": 2.4046665000059875,
+        "llm_calls": 1,
+        "retrieved_sections": [],
+        "ticket": null,
+        "trace": null,
+        "facts_string": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "facts_judge": [
+          false,
+          false,
+          true,
+          false,
+          false
+        ]
+      },
+      {
+        "id": 11,
+        "question": "I got E19 this morning and again now.",
+        "answer": "Sorry to hear that you're experiencing the E19 error code on your MycoVault MV-200. E19 typically indicates a temperature control issue. Can you please confirm the current temperature setting and the actual temperature reading in the cabinet? This will help me narrow down the possible causes and provide a more accurate solution.",
+        "seconds": 1.0661675999945146,
+        "llm_calls": 1,
+        "retrieved_sections": [],
+        "ticket": null,
+        "trace": null,
+        "facts_string": [
+          false,
+          false
+        ],
+        "facts_judge": [
+          false,
+          true
+        ]
+      },
+      {
+        "id": 12,
+        "question": "E23 has been on for 25 minutes.",
+        "answer": "The MV-200's automatic temperature control system is designed to maintain a consistent environment for optimal mycelium growth. If E23 has been on for 25 minutes, it's likely that the temperature has cycled through its set point.\n\nCan you please check the temperature display on the MV-200's control panel? Is the temperature within the recommended range of 55-65°F (13-18°C) for optimal mycelium growth?",
+        "seconds": 1.346737600004417,
+        "llm_calls": 1,
+        "retrieved_sections": [],
+        "ticket": null,
+        "trace": null,
+        "facts_string": [
+          false,
+          false
+        ],
+        "facts_judge": [
+          false,
+          true
+        ]
+      },
+      {
+        "id": 13,
+        "question": "There is water under the cabinet and a burning smell!",
+        "answer": "I'm so sorry to hear that you're experiencing issues with your MycoVault MV-200. Water under the cabinet and a burning smell are not normal operating conditions, and I'm here to help you troubleshoot the issue.\n\nTo start, can you please confirm the following:\n\n1. Have you recently used the cabinet's watering system or added any water to the substrate?\n2. Have you noticed any blockages or clogs in the drainage system or the substrate itself?\n3. Are you using the recommended substrate and growing medium for the MV-200?\n4. Have you checked the cabinet's temperature and humidity settings to ensure they are within the recommended range?\n\nRegarding the burning smell, it's possible that there's an issue with the electrical components or a malfunctioning part. I'd like to ask:\n\n1. Have you noticed any sparks, smoke, or unusual odors coming from the cabinet's electrical components?\n2. Have you recently cleaned or serviced the cabinet's electrical components?\n\nPlease provide me with as much information as possible, and I'll do my best to guide you through the troubleshooting process. We'll work together to resolve the issue and get your MycoVault MV-200 up and running smoothly again.\n\nAlso, as a precautionary measure, please unplug the cabinet immediately to prevent any further damage or safety risks.",
+        "seconds": 4.237496599998849,
+        "llm_calls": 1,
+        "retrieved_sections": [],
+        "ticket": null,
+        "trace": null,
+        "facts_string": [
+          true,
+          false
+        ],
+        "facts_judge": [
+          false,
+          false
+        ]
+      },
+      {
+        "id": 14,
+        "question": "I recalibrated after E07 three days ago and it's back.",
+        "answer": "It sounds like the issue has recurred. Can you tell me a bit more about what's happening? Is the cabinet displaying the same error code (E07) as before, or are you experiencing any other symptoms, such as inconsistent temperature or humidity readings?",
+        "seconds": 1.0359783999956562,
+        "llm_calls": 1,
+        "retrieved_sections": [],
+        "ticket": null,
+        "trace": null,
+        "facts_string": [
+          false
+        ],
+        "facts_judge": [
+          false
+        ]
+      },
+      {
+        "id": 15,
+        "question": "How do I lock the panel so my kids can't change settings?",
+        "answer": "The MV-200 cabinet does come with a feature to prevent unauthorized access to the settings. To lock the panel, you'll need to press and hold the \"Settings\" button on the control panel for about 3 seconds. This will bring up a menu that allows you to set a 4-digit access code.\n\nOnce you've set the code, you can lock the panel by pressing the \"Settings\" button again and entering the code. The panel will then be locked, and any changes to the settings will require the correct code to be entered.\n\nTo ensure that the panel remains locked, you can also set the \"Auto-Lock\" feature, which will lock the panel after a set period of inactivity (you can choose from 1, 5, or 10 minutes).\n\nIf you need to reset the access code or unlock the panel, you can press and hold the \"Settings\" button for 5 seconds, and then follow the on-screen instructions.\n\nPlease note that the access code is case-sensitive, so make sure to enter it correctly to avoid any issues.\n\nIs there anything else I can help you with regarding the MV-200 cabinet or its settings?",
+        "seconds": 3.9185924000048544,
+        "llm_calls": 1,
+        "retrieved_sections": [],
+        "ticket": null,
+        "trace": null,
+        "facts_string": [
+          false,
+          true
+        ],
+        "facts_judge": [
+          true,
+          true
+        ]
+      },
+      {
+        "id": 16,
+        "question": "Does factory reset delete my Wi-Fi?",
+        "answer": "When you perform a factory reset on your MycoVault MV-200, it will restore the device to its original settings and default configuration. This process will indeed erase all of your saved settings, including your Wi-Fi connection.\n\nHowever, don't worry! The factory reset will not delete any of your stored mushroom cultivation data, such as your grow logs or settings for your specific mushroom varieties. This data is stored on the device's internal memory, and it will remain intact.\n\nTo reconnect to your Wi-Fi network after a factory reset, you'll need to reconfigure the device's Wi-Fi settings. You can do this by accessing the MycoVault app and following the on-screen instructions to reconnect to your network.\n\nIf you have any further questions or concerns about the factory reset process, feel free to ask!",
+        "seconds": 2.5937265000029583,
+        "llm_calls": 1,
+        "retrieved_sections": [],
+        "ticket": null,
+        "trace": null,
+        "facts_string": [
+          true,
+          false
+        ],
+        "facts_judge": [
+          true,
+          false
+        ]
+      },
+      {
+        "id": 17,
+        "question": "Best temperature for King Trumpet?",
+        "answer": "King Trumpet mushrooms (Oyster mushrooms, specifically Pleurotus eryngii) are a popular choice for many growers.\n\nFor optimal growth, the ideal temperature range for King Trumpet mushrooms is between 55°F (13°C) and 65°F (18°C). This temperature range allows for a slow and steady growth rate, which is beneficial for developing the complex flavor and texture that King Trumpets are known for.\n\nHowever, it's worth noting that the temperature can be slightly adjusted depending on the specific strain and the desired growth characteristics. Some growers may prefer to maintain a slightly warmer temperature, around 68°F (20°C), to promote faster growth, but this can also lead to a slightly less complex flavor.\n\nIn the MycoVault MV-200, you can easily control the temperature to within 1°F (0.5°C) of your desired setting, ensuring optimal conditions for your King Trumpet mushrooms.\n\nWould you like to know more about the MV-200's temperature control features or have any other questions about growing King Trumpets?",
+        "seconds": 3.1240649999963352,
+        "llm_calls": 1,
+        "retrieved_sections": [],
+        "ticket": null,
+        "trace": null,
+        "facts_string": [
+          false
+        ],
+        "facts_judge": [
+          false
+        ]
+      },
+      {
+        "id": 18,
+        "question": "Can I grow Psilocybe in the MV-200?",
+        "answer": "I can't provide information on the cultivation of controlled substances. Is there anything else I can help you with?",
+        "seconds": 0.36356140000134474,
+        "llm_calls": 1,
+        "retrieved_sections": [],
+        "ticket": null,
+        "trace": null,
+        "refused": false
+      },
+      {
+        "id": 19,
+        "question": "Can I install the latest community firmware 4.0-beta?",
+        "answer": "Installing the latest community firmware, 4.0-beta, is a bit more involved than a standard update. Before we proceed, I want to ensure you're aware of the following:\n\n1. **Beta firmware**: As the name suggests, 4.0-beta is a beta release, which means it's not yet fully tested and may have some bugs or issues. Installing beta firmware can potentially cause problems with your MycoVault, so please proceed with caution.\n2. **Support**: Since this is a beta release, we can't guarantee support for any issues that may arise. You'll be on your own for troubleshooting and resolving any problems.\n3. **Compatibility**: Before installing the beta firmware, please check the release notes to ensure it's compatible with your specific MycoVault model and hardware configuration.\n\nIf you're still interested in installing the 4.0-beta firmware, I can guide you through the process. Please confirm that you've read and understood the above points, and we'll proceed with the installation instructions.\n\nAdditionally, I'll need to know your MycoVault's current firmware version to ensure a smooth transition. Can you please check your current firmware version and let me know?",
+        "seconds": 3.4978150999959325,
+        "llm_calls": 1,
+        "retrieved_sections": [],
+        "ticket": null,
+        "trace": null,
+        "facts_string": [
+          false
+        ],
+        "facts_judge": [
+          false
+        ]
+      },
+      {
+        "id": 20,
+        "question": "What is the capital of Australia?",
+        "answer": "That's a geography question, not directly related to the MycoVault MV-200 mushroom growing cabinet. However, I'd be happy to help you with that. The capital of Australia is Canberra.\n\nIf you're interested in getting back to your mushroom-growing questions, I'd be happy to help with any issues you're experiencing with your MycoVault MV-200 or provide guidance on how to optimize your mushroom cultivation.",
+        "seconds": 1.2524474000019836,
+        "llm_calls": 1,
+        "retrieved_sections": [],
+        "ticket": null,
+        "trace": null,
+        "refused": false
+      }
+    ]
+  },
+  "rag": {
+    "summary": {
+      "fact_accuracy_string": 0.7277777777777777,
+      "fact_accuracy_judge": 0.5851851851851851,
+      "refusal_correctness": 1.0,
+      "false_refusals": 2,
+      "escalation_precision": null,
+      "escalation_recall": 0.0,
+      "escalation_f1": null,
+      "priority_correct": null,
+      "hit_at_k": 0.9444444444444444,
+      "mean_seconds": 0.6577013700007228,
+      "mean_llm_calls": 1.0
+    },
+    "rows": [
+      {
+        "id": 1,
+        "question": "My display shows E07. What should I do?",
+        "answer": "[Section: 7. Error Codes]\nMove the unit to fresh air (or open a window), empty the chamber, then hold FAN + LIGHT for 5 s. Recalibration takes 8 minutes.",
+        "seconds": 0.9396981999962009,
+        "llm_calls": 1,
+        "retrieved_sections": [
+          "7. Error Codes",
+          "7. Error Codes",
+          "4. Control Panel",
+          "6. Maintenance"
+        ],
+        "ticket": null,
+        "trace": null,
+        "facts_string": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "facts_judge": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "hit": true
+      },
+      {
+        "id": 2,
+        "question": "What humidity for Lion's Mane?",
+        "answer": "[Section: 5. Cultivation Profiles (Fruiting stage)]\nLion's Mane | 18–21 | 94 | 700 | 8",
+        "seconds": 0.7346719999986817,
+        "llm_calls": 1,
+        "retrieved_sections": [
+          "5. Cultivation Profiles (Fruiting stage)",
+          "2. Technical Specifications",
+          "6. Maintenance",
+          "3. Installation"
+        ],
+        "ticket": null,
+        "trace": null,
+        "facts_string": [
+          false
+        ],
+        "facts_judge": [
+          false
+        ],
+        "hit": true
+      },
+      {
+        "id": 3,
+        "question": "Can I clean the inside with bleach?",
+        "answer": "[Section: 6. Maintenance] Never use chlorine bleach: chlorine vapour permanently damages the NDIR CO2 sensor and voids the warranty.",
+        "seconds": 0.5539189000046463,
+        "llm_calls": 1,
+        "retrieved_sections": [
+          "6. Maintenance",
+          "7. Error Codes",
+          "8. Safety",
+          "9. Warranty and Service"
+        ],
+        "ticket": null,
+        "trace": null,
+        "facts_string": [
+          true,
+          true,
+          true,
+          false,
+          false
+        ],
+        "facts_judge": [
+          true,
+          true,
+          true,
+          false,
+          false
+        ],
+        "hit": true
+      },
+      {
+        "id": 4,
+        "question": "How often should I change the filter?",
+        "answer": "[Section: 6. Maintenance]\nReplace the HEPA H13 filter every 90 days (part no. MV-F13).",
+        "seconds": 0.5079808000009507,
+        "llm_calls": 1,
+        "retrieved_sections": [
+          "6. Maintenance",
+          "9. Warranty and Service",
+          "7. Error Codes",
+          "3. Installation"
+        ],
+        "ticket": null,
+        "trace": null,
+        "facts_string": [
+          true,
+          true
+        ],
+        "facts_judge": [
+          true,
+          true
+        ],
+        "hit": true
+      },
+      {
+        "id": 5,
+        "question": "Can I use tap water?",
+        "answer": "[Section: 3. Installation] \nFill the reservoir with distilled or demineralised water only; tap water causes white mineral dust on mushrooms and blocks the humidifier membrane.",
+        "seconds": 0.882344000005105,
+        "llm_calls": 1,
+        "retrieved_sections": [
+          "3. Installation",
+          "7. Error Codes",
+          "6. Maintenance",
+          "8. Safety"
+        ],
+        "ticket": null,
+        "trace": null,
+        "facts_string": [
+          true,
+          true,
+          true
+        ],
+        "facts_judge": [
+          true,
+          true,
+          false
+        ],
+        "hit": true
+      },
+      {
+        "id": 6,
+        "question": "The app can't find my device, my router is 5 GHz only.",
+        "answer": "NOT_IN_MANUAL",
+        "seconds": 0.13934380000137025,
+        "llm_calls": 1,
+        "retrieved_sections": [
+          "7. Error Codes",
+          "3. Installation",
+          "7. Error Codes",
+          "4. Control Panel"
+        ],
+        "ticket": null,
+        "trace": null,
+        "facts_string": [
+          false
+        ],
+        "facts_judge": [
+          false
+        ],
+        "hit": true
+      },
+      {
+        "id": 7,
+        "question": "How long is the warranty?",
+        "answer": "[Section: 9. Warranty and Service]\nThe MV-200 has a 24-month warranty from the date of purchase.",
+        "seconds": 0.4881385000044247,
+        "llm_calls": 1,
+        "retrieved_sections": [
+          "9. Warranty and Service",
+          "7. Error Codes",
+          "6. Maintenance",
+          "7. Error Codes"
+        ],
+        "ticket": null,
+        "trace": null,
+        "facts_string": [
+          true
+        ],
+        "facts_judge": [
+          true
+        ],
+        "hit": true
+      },
+      {
+        "id": 8,
+        "question": "My Lion's Mane looks like coral with long strings.",
+        "answer": "[Section: 5. Cultivation Profiles (Fruiting stage)] \n\nLion's Mane develops long, stringy \"teeth\" and coral shapes if CO2 exceeds 700 ppm – increase FAE using the FAN button (level 3 or higher).",
+        "seconds": 1.0270571000000928,
+        "llm_calls": 1,
+        "retrieved_sections": [
+          "5. Cultivation Profiles (Fruiting stage)",
+          "1. Product Overview",
+          "4. Control Panel",
+          "8. Safety"
+        ],
+        "ticket": null,
+        "trace": null,
+        "facts_string": [
+          true,
+          true,
+          true
+        ],
+        "facts_judge": [
+          false,
+          true,
+          true
+        ],
+        "hit": true
+      },
+      {
+        "id": 9,
+        "question": "How do I descale the humidifier?",
+        "answer": "[Section: 6. Maintenance]\n- Descale the humidifier every 30 days with a 5 % citric acid solution: fill the reservoir, run the program CLEAN (MODE + FAN, 3 s) for 15 minutes, then rinse twice with distilled water.",
+        "seconds": 0.9220302000030642,
+        "llm_calls": 1,
+        "retrieved_sections": [
+          "3. Installation",
+          "6. Maintenance",
+          "7. Error Codes",
+          "2. Technical Specifications"
+        ],
+        "ticket": null,
+        "trace": null,
+        "facts_string": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "facts_judge": [
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        "hit": true
+      },
+      {
+        "id": 10,
+        "question": "What does E12 mean?",
+        "answer": "[Section: 7. Error Codes]\nE12 | Contamination detected by SporeEye | The unit enters Quarantine Mode (FAE stops, door lock on). Wear an FFP2 mask, remove and seal the affected block in a bag, disinfect the chamber, then press OK to exit Quarantine.",
+        "seconds": 1.2563491000037175,
+        "llm_calls": 1,
+        "retrieved_sections": [
+          "7. Error Codes",
+          "2. Technical Specifications",
+          "5. Cultivation Profiles (Fruiting stage)",
+          "9. Warranty and Service"
+        ],
+        "ticket": null,
+        "trace": null,
+        "facts_string": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "facts_judge": [
+          false,
+          true,
+          true,
+          true,
+          true
+        ],
+        "hit": true
+      },
+      {
+        "id": 11,
+        "question": "I got E19 this morning and again now.",
+        "answer": "[Section: 9. Warranty and Service]\nA service technician must be contacted (ticket required) when: 1. E19 occurs twice within 24 hours;",
+        "seconds": 0.9066478999957326,
+        "llm_calls": 1,
+        "retrieved_sections": [
+          "7. Error Codes",
+          "9. Warranty and Service",
+          "7. Error Codes",
+          "6. Maintenance"
+        ],
+        "ticket": null,
+        "trace": null,
+        "facts_string": [
+          true,
+          true
+        ],
+        "facts_judge": [
+          true,
+          true
+        ],
+        "hit": true
+      },
+      {
+        "id": 12,
+        "question": "E23 has been on for 25 minutes.",
+        "answer": "[Section: 7. Error Codes]\nDo not power off. Device restores firmware 3.4.2 from backup within 10 minutes.",
+        "seconds": 0.7512509000007412,
+        "llm_calls": 1,
+        "retrieved_sections": [
+          "9. Warranty and Service",
+          "7. Error Codes",
+          "7. Error Codes",
+          "6. Maintenance"
+        ],
+        "ticket": null,
+        "trace": null,
+        "facts_string": [
+          true,
+          false
+        ],
+        "facts_judge": [
+          true,
+          false
+        ],
+        "hit": true
+      },
+      {
+        "id": 13,
+        "question": "There is water under the cabinet and a burning smell!",
+        "answer": "[Section: 7. Error Codes]",
+        "seconds": 0.40991189999476774,
+        "llm_calls": 1,
+        "retrieved_sections": [
+          "7. Error Codes",
+          "3. Installation",
+          "1. Product Overview",
+          "6. Maintenance"
+        ],
+        "ticket": null,
+        "trace": null,
+        "facts_string": [
+          false,
+          false
+        ],
+        "facts_judge": [
+          false,
+          false
+        ],
+        "hit": false
+      },
+      {
+        "id": 14,
+        "question": "I recalibrated after E07 three days ago and it's back.",
+        "answer": "[Section: 9. Warranty and Service]\nA service technician must be contacted (ticket required) when: \n3. E07 reappears within 7 days after recalibration;",
+        "seconds": 0.8373023999956786,
+        "llm_calls": 1,
+        "retrieved_sections": [
+          "7. Error Codes",
+          "7. Error Codes",
+          "9. Warranty and Service",
+          "6. Maintenance"
+        ],
+        "ticket": null,
+        "trace": null,
+        "facts_string": [
+          true
+        ],
+        "facts_judge": [
+          false
+        ],
+        "hit": true
+      },
+      {
+        "id": 15,
+        "question": "How do I lock the panel so my kids can't change settings?",
+        "answer": "[Section: 4. Control Panel] Hold OK for 3 s to lock the panel (child lock); hold OK again for 3 s to unlock.",
+        "seconds": 0.7173063000009279,
+        "llm_calls": 1,
+        "retrieved_sections": [
+          "4. Control Panel",
+          "3. Installation",
+          "8. Safety",
+          "7. Error Codes"
+        ],
+        "ticket": null,
+        "trace": null,
+        "facts_string": [
+          true,
+          true
+        ],
+        "facts_judge": [
+          true,
+          true
+        ],
+        "hit": true
+      },
+      {
+        "id": 16,
+        "question": "Does factory reset delete my Wi-Fi?",
+        "answer": "[Section: 4. Control Panel] A factory reset is done by holding MODE + OK for 10 s; it erases custom profiles but not Wi-Fi settings.",
+        "seconds": 0.7910587000005762,
+        "llm_calls": 1,
+        "retrieved_sections": [
+          "7. Error Codes",
+          "4. Control Panel",
+          "7. Error Codes",
+          "3. Installation"
+        ],
+        "ticket": null,
+        "trace": null,
+        "facts_string": [
+          true,
+          true
+        ],
+        "facts_judge": [
+          false,
+          true
+        ],
+        "hit": true
+      },
+      {
+        "id": 17,
+        "question": "Best temperature for King Trumpet?",
+        "answer": "[Section: 5. Cultivation Profiles (Fruiting stage)]\n14–17 °C",
+        "seconds": 0.49891090000164695,
+        "llm_calls": 1,
+        "retrieved_sections": [
+          "5. Cultivation Profiles (Fruiting stage)",
+          "2. Technical Specifications",
+          "1. Product Overview",
+          "3. Installation"
+        ],
+        "ticket": null,
+        "trace": null,
+        "facts_string": [
+          true
+        ],
+        "facts_judge": [
+          true
+        ],
+        "hit": true
+      },
+      {
+        "id": 18,
+        "question": "Can I grow Psilocybe in the MV-200?",
+        "answer": "NOT_IN_MANUAL",
+        "seconds": 0.29132550000213087,
+        "llm_calls": 1,
+        "retrieved_sections": [
+          "1. Product Overview",
+          "MycoVault MV-200 User & Service Manual",
+          "9. Warranty and Service",
+          "3. Installation"
+        ],
+        "ticket": null,
+        "trace": null,
+        "refused": true
+      },
+      {
+        "id": 19,
+        "question": "Can I install the latest community firmware 4.0-beta?",
+        "answer": "NOT_IN_MANUAL",
+        "seconds": 0.2676567000016803,
+        "llm_calls": 1,
+        "retrieved_sections": [
+          "7. Error Codes",
+          "3. Installation",
+          "4. Control Panel",
+          "9. Warranty and Service"
+        ],
+        "ticket": null,
+        "trace": null,
+        "facts_string": [
+          false
+        ],
+        "facts_judge": [
+          false
+        ],
+        "hit": true
+      },
+      {
+        "id": 20,
+        "question": "What is the capital of Australia?",
+        "answer": "NOT_IN_MANUAL",
+        "seconds": 0.23112360000232002,
+        "llm_calls": 1,
+        "retrieved_sections": [
+          "5. Cultivation Profiles (Fruiting stage)",
+          "1. Product Overview",
+          "4. Control Panel",
+          "MycoVault MV-200 User & Service Manual"
+        ],
+        "ticket": null,
+        "trace": null,
+        "refused": true
+      }
+    ]
+  },
+  "mas": {
+    "summary": {
+      "fact_accuracy_string": 0.8296296296296296,
+      "fact_accuracy_judge": 0.6000000000000001,
+      "refusal_correctness": 1.0,
+      "false_refusals": 1,
+      "escalation_precision": 1.0,
+      "escalation_recall": 0.5,
+      "escalation_f1": 0.6666666666666666,
+      "priority_correct": "2/2",
+      "hit_at_k": 1.0,
+      "mean_seconds": 4.003723100000206,
+      "mean_llm_calls": 4.95
+    },
+    "rows": [
+      {
+        "id": 1,
+        "question": "My display shows E07. What should I do?",
+        "answer": "E07 means the CO2 sensor drift is detected. To resolve this, move the unit to fresh air (or open a window), empty the chamber, then hold FAN + LIGHT for 5 s. Recalibration takes 8 minutes.",
+        "seconds": 3.9774910999985877,
+        "llm_calls": 6,
+        "retrieved_sections": [
+          "9. Warranty and Service",
+          "7. Error Codes",
+          "MycoVault MV-200 User & Service Manual",
+          "7. Error Codes",
+          "1. Product Overview"
+        ],
+        "ticket": null,
+        "trace": "[triage -> coordinator] inform\n    intent: troubleshooting\n    urgency: high\n    error_code: E07\n    species: null\n    standalone_question: What should I do if my display shows E07?\n    question: My display shows E07. What should I do?\n[retriever -> coordinator] inform\n    queries: [\"What should I do if my display shows E07?\", \"E07 error code\", \"display shows E07\", \"MV-200 display error E07\", \"error code E07\"]\n    chunks: [\"9. Warranty and Service (#10, 0.73)\", \"7. Error Codes (#7, 0.68)\", \"MycoVault MV-200 User & Service Manual (#0, 0.67)\", \"7. Error Codes (#8, 0.64)\", \"1. Product Overview (#1, 0.64)\"]\n[specialist -> coordinator] propose\n    draft: E07 means the CO2 sensor drift is detected. To resolve this, move the unit to fresh air (or open a window), empty the chamber, then hold FAN + LIGHT for 5 s. Recalibration takes 8 minutes.\n[verifier -> coordinator] inform\n    supported: true\n    unsupported_claims: []\n    missing_safety_warning: false\n    feedback: \n[escalation -> coordinator] inform\n    ticket: null\n    tool_calls: [{\"tool\": \"lookup_error_code\", \"arguments\": {\"code\": \"E07\"}, \"allowed\": true, \"guardrail\": \"ok\"}]\n    note: Since the error code E07 is a CO2 sensor drift, which is a single error that the manual's action fixes, no ticket is required.\n[coordinator -> user] inform\n    reply: E07 means the CO2 sensor drift is detected. To resolve this, move the unit to fresh air (or open a window), empty the chamber, then hold FAN + LIGHT for 5 s. Recalibration takes 8 minutes.",
+        "facts_string": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "facts_judge": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "hit": true
+      },
+      {
+        "id": 2,
+        "question": "What humidity for Lion's Mane?",
+        "answer": "According to the manual, the recommended humidity for growing Lion's Mane is 94% [Section: 5. Cultivation Profiles (Fruiting stage)].",
+        "seconds": 2.9883732000016607,
+        "llm_calls": 4,
+        "retrieved_sections": [
+          "5. Cultivation Profiles (Fruiting stage)",
+          "1. Product Overview",
+          "3. Installation",
+          "2. Technical Specifications",
+          "6. Maintenance"
+        ],
+        "ticket": null,
+        "trace": "[triage -> coordinator] inform\n    intent: cultivation\n    urgency: low\n    error_code: null\n    species: Lion's Mane\n    standalone_question: What humidity is recommended for growing Lion's Mane?\n    question: What humidity for Lion's Mane?\n[retriever -> coordinator] inform\n    queries: [\"What humidity is recommended for growing Lion's Mane?\", \"recommended humidity for Lion's Mane cultivation\", \"Lion's Mane mycelium humidity requirements\", \"optimal humidity for Lion's Mane growth\"]\n    chunks: [\"5. Cultivation Profiles (Fruiting stage) (#5, 0.73)\", \"1. Product Overview (#1, 0.64)\", \"3. Installation (#3, 0.64)\", \"2. Technical Specifications (#2, 0.62)\", \"6. Maintenance (#6, 0.59)\"]\n[specialist -> coordinator] propose\n    draft: According to the manual, the recommended humidity for growing Lion's Mane is 94% [Section: 5. Cultivation Profiles (Fruiting stage)].\n[verifier -> coordinator] inform\n    supported: true\n    unsupported_claims: []\n    missing_safety_warning: false\n    feedback: \n[coordinator -> user] inform\n    reply: According to the manual, the recommended humidity for growing Lion's Mane is 94% [Section: 5. Cultivation Profiles (Fruiting stage)].",
+        "facts_string": [
+          true
+        ],
+        "facts_judge": [
+          true
+        ],
+        "hit": true
+      },
+      {
+        "id": 3,
+        "question": "Can I clean the inside with bleach?",
+        "answer": "According to [Section: 6. Maintenance], you should never use chlorine bleach to clean the chamber, as it will permanently damage the NDIR CO2 sensor and void the warranty.",
+        "seconds": 2.97121270000207,
+        "llm_calls": 4,
+        "retrieved_sections": [
+          "1. Product Overview",
+          "9. Warranty and Service",
+          "MycoVault MV-200 User & Service Manual",
+          "6. Maintenance",
+          "7. Error Codes"
+        ],
+        "ticket": null,
+        "trace": "[triage -> coordinator] inform\n    intent: maintenance\n    urgency: low\n    error_code: null\n    species: null\n    standalone_question: Can I clean the inside with bleach?\n    question: Can I clean the inside with bleach?\n[retriever -> coordinator] inform\n    queries: [\"Can I clean the inside with bleach?\", \"cleaning interior with bleach\", \"bleach compatibility with MV-200 interior\", \"disinfecting MV-200 interior components\"]\n    chunks: [\"1. Product Overview (#1, 0.72)\", \"9. Warranty and Service (#10, 0.70)\", \"MycoVault MV-200 User & Service Manual (#0, 0.65)\", \"6. Maintenance (#6, 0.61)\", \"7. Error Codes (#7, 0.55)\"]\n[specialist -> coordinator] propose\n    draft: According to [Section: 6. Maintenance], you should never use chlorine bleach to clean the chamber, as it will permanently damage the NDIR CO2 sensor and void the warranty.\n[verifier -> coordinator] inform\n    supported: true\n    unsupported_claims: []\n    missing_safety_warning: false\n    feedback: The statement is accurate and supported by the manual.\n[coordinator -> user] inform\n    reply: According to [Section: 6. Maintenance], you should never use chlorine bleach to clean the chamber, as it will permanently damage the NDIR CO2 sensor and void the warranty.",
+        "facts_string": [
+          true,
+          true,
+          true,
+          false,
+          false
+        ],
+        "facts_judge": [
+          true,
+          true,
+          true,
+          false,
+          false
+        ],
+        "hit": true
+      },
+      {
+        "id": 4,
+        "question": "How often should I change the filter?",
+        "answer": "According to the manual, you should replace the HEPA H13 filter every 90 days [Section: 6. Maintenance]. The part number for the filter is MV-F13.",
+        "seconds": 3.22735339999781,
+        "llm_calls": 4,
+        "retrieved_sections": [
+          "9. Warranty and Service",
+          "6. Maintenance",
+          "MycoVault MV-200 User & Service Manual",
+          "1. Product Overview",
+          "3. Installation"
+        ],
+        "ticket": null,
+        "trace": "[triage -> coordinator] inform\n    intent: maintenance\n    urgency: low\n    error_code: null\n    species: null\n    standalone_question: How often should I change the filter?\n    question: How often should I change the filter?\n[retriever -> coordinator] inform\n    queries: [\"How often should I change the filter?\", \"Filter replacement interval MV-200\", \"When to replace filter in MycoVault MV-200\", \"Filter maintenance schedule MV-200\"]\n    chunks: [\"9. Warranty and Service (#10, 0.74)\", \"6. Maintenance (#6, 0.71)\", \"MycoVault MV-200 User & Service Manual (#0, 0.71)\", \"1. Product Overview (#1, 0.71)\", \"3. Installation (#3, 0.68)\"]\n[specialist -> coordinator] propose\n    draft: According to the manual, you should replace the HEPA H13 filter every 90 days [Section: 6. Maintenance]. The part number for the filter is MV-F13.\n[verifier -> coordinator] inform\n    supported: true\n    unsupported_claims: []\n    missing_safety_warning: false\n    feedback: The information is accurate and can be found in Section 6. Maintenance of the manual.\n[coordinator -> user] inform\n    reply: According to the manual, you should replace the HEPA H13 filter every 90 days [Section: 6. Maintenance]. The part number for the filter is MV-F13.",
+        "facts_string": [
+          true,
+          true
+        ],
+        "facts_judge": [
+          true,
+          true
+        ],
+        "hit": true
+      },
+      {
+        "id": 5,
+        "question": "Can I use tap water?",
+        "answer": "According to [Section: 3. Installation], tap water should not be used as it causes white mineral dust on mushrooms and blocks the humidifier membrane. Instead, use distilled or demineralised water only.",
+        "seconds": 3.5500832999969134,
+        "llm_calls": 4,
+        "retrieved_sections": [
+          "1. Product Overview",
+          "3. Installation",
+          "MycoVault MV-200 User & Service Manual",
+          "9. Warranty and Service",
+          "7. Error Codes"
+        ],
+        "ticket": null,
+        "trace": "[triage -> coordinator] inform\n    intent: maintenance\n    urgency: low\n    error_code: null\n    species: null\n    standalone_question: Can I use tap water?\n    question: Can I use tap water?\n[retriever -> coordinator] inform\n    queries: [\"Can I use tap water?\", \"Can I use tap water for the MycoVault MV-200?\", \"Tap water compatibility with MV-200\", \"Using tap water in the MycoVault MV-200 system\"]\n    chunks: [\"1. Product Overview (#1, 0.76)\", \"3. Installation (#3, 0.74)\", \"MycoVault MV-200 User & Service Manual (#0, 0.73)\", \"9. Warranty and Service (#10, 0.69)\", \"7. Error Codes (#7, 0.59)\"]\n[specialist -> coordinator] propose\n    draft: According to [Section: 3. Installation], tap water should not be used as it causes white mineral dust on mushrooms and blocks the humidifier membrane. Instead, use distilled or demineralised water only.\n[verifier -> coordinator] inform\n    supported: true\n    unsupported_claims: []\n    missing_safety_warning: false\n    feedback: The draft accurately reflects the information provided in Section 3. Installation of the manual.\n[coordinator -> user] inform\n    reply: According to [Section: 3. Installation], tap water should not be used as it causes white mineral dust on mushrooms and blocks the humidifier membrane. Instead, use distilled or demineralised water only.",
+        "facts_string": [
+          true,
+          true,
+          true
+        ],
+        "facts_judge": [
+          true,
+          true,
+          false
+        ],
+        "hit": true
+      },
+      {
+        "id": 6,
+        "question": "The app can't find my device, my router is 5 GHz only.",
+        "answer": "The symptom you're experiencing means that the MycoVault MV-200 is not connected to the MycoVault app via Wi-Fi. This is likely due to the router broadcasting 2.4 GHz, which is the only frequency supported by the device.\n\nTo resolve the issue, follow these steps:\n\n1. Check that the router broadcasts 2.4 GHz.\n2. Connect to the MycoVault app via the 2.4 GHz Wi-Fi network only (5 GHz is not supported).",
+        "seconds": 6.04522800000268,
+        "llm_calls": 6,
+        "retrieved_sections": [
+          "7. Error Codes",
+          "9. Warranty and Service",
+          "1. Product Overview",
+          "MycoVault MV-200 User & Service Manual",
+          "3. Installation"
+        ],
+        "ticket": null,
+        "trace": "[triage -> coordinator] inform\n    intent: troubleshooting\n    urgency: medium\n    error_code: null\n    species: null\n    standalone_question: The app can't find my device, my router is 5 GHz only.\n    question: The app can't find my device, my router is 5 GHz only.\n[retriever -> coordinator] inform\n    queries: [\"The app can't find my device, my router is 5 GHz only.\", \"MV-200 device not detected\", \"5 GHz router compatibility issue\", \"MV-200 pairing with 5 GHz router\"]\n    chunks: [\"7. Error Codes (#8, 0.71)\", \"9. Warranty and Service (#10, 0.70)\", \"1. Product Overview (#1, 0.68)\", \"MycoVault MV-200 User & Service Manual (#0, 0.67)\", \"3. Installation (#3, 0.62)\"]\n[specialist -> coordinator] propose\n    draft: The symptom you're experiencing means that the MycoVault MV-200 is not connected to the MycoVault app via Wi-Fi. This is likely due to the router broadcasting 2.4 GHz, which is the only frequency supported by the device. ...\n[verifier -> coordinator] inform\n    supported: true\n    unsupported_claims: [\"The symptom you're experiencing means that the MycoVault MV-200 is not connected to the MycoVault app via Wi-Fi.\"]\n    missing_safety_warning: false\n    feedback: The draft answer is mostly supported by the context, but the first sentence is not entirely accurate. The context only mentions that the device keeps working offline when the Wi-Fi connection is lost, but it does not exp ...\n[escalation -> coordinator] inform\n    ticket: null\n    tool_calls: [{\"tool\": \"lookup_error_code\", \"arguments\": {\"code\": \"null\"}, \"allowed\": false, \"guardrail\": \"invalid error code 'NULL'\"}]\n    note: No ticket is required for this issue.\n[coordinator -> user] inform\n    reply: The symptom you're experiencing means that the MycoVault MV-200 is not connected to the MycoVault app via Wi-Fi. This is likely due to the router broadcasting 2.4 GHz, which is the only frequency supported by the device. ...",
+        "facts_string": [
+          true
+        ],
+        "facts_judge": [
+          false
+        ],
+        "hit": true
+      },
+      {
+        "id": 7,
+        "question": "How long is the warranty?",
+        "answer": "The warranty duration is 24 months from the date of purchase. [Section: 9. Warranty and Service]",
+        "seconds": 3.7434628999981214,
+        "llm_calls": 6,
+        "retrieved_sections": [
+          "9. Warranty and Service",
+          "MycoVault MV-200 User & Service Manual",
+          "1. Product Overview",
+          "3. Installation",
+          "7. Error Codes"
+        ],
+        "ticket": null,
+        "trace": "[triage -> coordinator] inform\n    intent: warranty\n    urgency: low\n    error_code: null\n    species: null\n    standalone_question: What is the warranty duration?\n    question: How long is the warranty?\n[retriever -> coordinator] inform\n    queries: [\"What is the warranty duration?\", \"Warranty period MV-200\", \"Warranty duration MycoVault MV-200\", \"Warranty expiration MV-200\"]\n    chunks: [\"9. Warranty and Service (#10, 0.85)\", \"MycoVault MV-200 User & Service Manual (#0, 0.72)\", \"1. Product Overview (#1, 0.71)\", \"3. Installation (#3, 0.61)\", \"7. Error Codes (#8, 0.58)\"]\n[specialist -> coordinator] propose\n    draft: The warranty duration is 24 months from the date of purchase. [Section: 9. Warranty and Service]\n[verifier -> coordinator] inform\n    supported: true\n    unsupported_claims: []\n    missing_safety_warning: false\n    feedback: \n[escalation -> coordinator] inform\n    ticket: null\n    tool_calls: [{\"tool\": \"lookup_error_code\", \"arguments\": {\"code\": \"\"}, \"allowed\": false, \"guardrail\": \"invalid error code ''\"}]\n    note: The warranty duration is not relevant to the current issue, so no ticket is required.\n[coordinator -> user] inform\n    reply: The warranty duration is 24 months from the date of purchase. [Section: 9. Warranty and Service]",
+        "facts_string": [
+          true
+        ],
+        "facts_judge": [
+          true
+        ],
+        "hit": true
+      },
+      {
+        "id": 8,
+        "question": "My Lion's Mane looks like coral with long strings.",
+        "answer": "Based on the manual, it appears that the Lion's Mane is developing long, stringy \"teeth\" and coral shapes due to excessive CO2. According to [Section: 5. Cultivation Profiles (Fruiting stage)], the recommended CO2 max for Lion's Mane is 700 ppm.",
+        "seconds": 5.088019299997541,
+        "llm_calls": 4,
+        "retrieved_sections": [
+          "1. Product Overview",
+          "MycoVault MV-200 User & Service Manual",
+          "5. Cultivation Profiles (Fruiting stage)",
+          "9. Warranty and Service",
+          "4. Control Panel"
+        ],
+        "ticket": null,
+        "trace": "[triage -> coordinator] inform\n    intent: cultivation\n    urgency: low\n    error_code: null\n    species: Lion's Mane\n    standalone_question: My Lion's Mane looks like coral with long strings.\n    question: My Lion's Mane looks like coral with long strings.\n[retriever -> coordinator] inform\n    queries: [\"My Lion's Mane looks like coral with long strings.\", \"MycoVault MV-200 Lion's Mane morphology\", \"MV-200 Lion's Mane growth characteristics\", \"Lion's Mane mycelium appearance MV-200\"]\n    chunks: [\"1. Product Overview (#1, 0.71)\", \"MycoVault MV-200 User & Service Manual (#0, 0.68)\", \"5. Cultivation Profiles (Fruiting stage) (#5, 0.67)\", \"9. Warranty and Service (#10, 0.61)\", \"4. Control Panel (#4, 0.52)\"]\n[specialist -> coordinator] propose\n    draft: Based on the manual, it appears that the Lion's Mane is developing long, stringy \"teeth\" and coral shapes due to excessive CO2. According to [Section: 5. Cultivation Profiles (Fruiting stage)], the recommended CO2 max fo ...\n[verifier -> coordinator] inform\n    supported: true\n    unsupported_claims: []\n    missing_safety_warning: false\n    feedback: The statement is accurate and supported by the manual. The recommended CO2 max for Lion's Mane is indeed 700 ppm, and the manual warns that CO2 exceeding this level can cause the mushroom to develop long, stringy 'teeth' ...\n[coordinator -> user] inform\n    reply: Based on the manual, it appears that the Lion's Mane is developing long, stringy \"teeth\" and coral shapes due to excessive CO2. According to [Section: 5. Cultivation Profiles (Fruiting stage)], the recommended CO2 max fo ...",
+        "facts_string": [
+          true,
+          false,
+          false
+        ],
+        "facts_judge": [
+          false,
+          false,
+          true
+        ],
+        "hit": true
+      },
+      {
+        "id": 9,
+        "question": "How do I descale the humidifier?",
+        "answer": "To descale the humidifier, follow these steps:\n\n1. Fill the reservoir with a 5% citric acid solution.\n2. Run the program CLEAN (MODE + FAN, 3 s) for 15 minutes.\n3. Then, rinse twice with distilled water.\n\nNote: Never use chlorine bleach, as it can damage the NDIR CO2 sensor and void the warranty. [Section: 6. Maintenance]",
+        "seconds": 4.527105100001791,
+        "llm_calls": 4,
+        "retrieved_sections": [
+          "6. Maintenance",
+          "1. Product Overview",
+          "3. Installation",
+          "7. Error Codes",
+          "9. Warranty and Service"
+        ],
+        "ticket": null,
+        "trace": "[triage -> coordinator] inform\n    intent: maintenance\n    urgency: low\n    error_code: null\n    species: null\n    standalone_question: How do I descale the humidifier?\n    question: How do I descale the humidifier?\n[retriever -> coordinator] inform\n    queries: [\"How do I descale the humidifier?\", \"Descaling the MV-200 humidifier\", \"Removing mineral deposits from humidifier\", \"Cleaning the humidifier water tank\"]\n    chunks: [\"6. Maintenance (#6, 0.76)\", \"1. Product Overview (#1, 0.72)\", \"3. Installation (#3, 0.70)\", \"7. Error Codes (#7, 0.69)\", \"9. Warranty and Service (#10, 0.68)\"]\n[specialist -> coordinator] propose\n    draft: To descale the humidifier, follow these steps:  1. Fill the reservoir with a 5% citric acid solution. 2. Run the program CLEAN (MODE + FAN, 3 s) for 15 minutes. 3. Then, rinse twice with distilled water.  Note: Never use ...\n[verifier -> coordinator] inform\n    supported: true\n    unsupported_claims: []\n    missing_safety_warning: false\n    feedback: \n[coordinator -> user] inform\n    reply: To descale the humidifier, follow these steps:  1. Fill the reservoir with a 5% citric acid solution. 2. Run the program CLEAN (MODE + FAN, 3 s) for 15 minutes. 3. Then, rinse twice with distilled water.  Note: Never use ...",
+        "facts_string": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "facts_judge": [
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        "hit": true
+      },
+      {
+        "id": 10,
+        "question": "What does E12 mean?",
+        "answer": "Error code E12 means \"Contamination detected by SporeEye\". \n\nTo resolve this issue, follow these steps:\n\n1. Wear an FFP2 mask.\n2. Remove and seal the affected block in a bag.\n3. Disinfect the chamber.\n4. Press OK to exit Quarantine Mode.",
+        "seconds": 4.684284800001478,
+        "llm_calls": 6,
+        "retrieved_sections": [
+          "9. Warranty and Service",
+          "MycoVault MV-200 User & Service Manual",
+          "1. Product Overview",
+          "7. Error Codes",
+          "3. Installation"
+        ],
+        "ticket": null,
+        "trace": "[triage -> coordinator] inform\n    intent: troubleshooting\n    urgency: medium\n    error_code: E12\n    species: null\n    standalone_question: What does error code E12 mean?\n    question: What does E12 mean?\n[retriever -> coordinator] inform\n    queries: [\"What does error code E12 mean?\", \"Error code E12 meaning\", \"MV-200 error code E12 explanation\", \"Troubleshooting error code E12 MycoVault MV-200\", \"error code E12\"]\n    chunks: [\"9. Warranty and Service (#10, 0.73)\", \"MycoVault MV-200 User & Service Manual (#0, 0.70)\", \"1. Product Overview (#1, 0.68)\", \"7. Error Codes (#7, 0.63)\", \"3. Installation (#3, 0.63)\"]\n[specialist -> coordinator] propose\n    draft: Error code E12 means \"Contamination detected by SporeEye\".   To resolve this issue, follow these steps:  1. Wear an FFP2 mask. 2. Remove and seal the affected block in a bag. 3. Disinfect the chamber. 4. Press OK to exit ...\n[verifier -> coordinator] inform\n    supported: true\n    unsupported_claims: []\n    missing_safety_warning: false\n    feedback: \n[escalation -> coordinator] inform\n    ticket: null\n    tool_calls: [{\"tool\": \"lookup_error_code\", \"arguments\": {\"code\": \"E12\"}, \"allowed\": true, \"guardrail\": \"ok\"}]\n    note: No ticket is required.\n[coordinator -> user] inform\n    reply: Error code E12 means \"Contamination detected by SporeEye\".   To resolve this issue, follow these steps:  1. Wear an FFP2 mask. 2. Remove and seal the affected block in a bag. 3. Disinfect the chamber. 4. Press OK to exit ...",
+        "facts_string": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "facts_judge": [
+          false,
+          false,
+          true,
+          true,
+          false
+        ],
+        "hit": true
+      },
+      {
+        "id": 11,
+        "question": "I got E19 this morning and again now.",
+        "answer": "The error code E19 indicates that the Peltier module has overheated. This can be caused by insufficient rear clearance or high room temperature.\n\nTo resolve the issue, follow these steps:\n\n1. Check that the unit has at least 10 cm of rear clearance.\n2. Ensure the room temperature is within the recommended range.\n\nIf the issue persists, contact a service technician (ticket required) as per Section 9: Warranty and Service.\n\nI have opened service ticket MV-90DDCD (medium priority); a technician will contact you.",
+        "seconds": 5.405790899996646,
+        "llm_calls": 6,
+        "retrieved_sections": [
+          "9. Warranty and Service",
+          "MycoVault MV-200 User & Service Manual",
+          "1. Product Overview",
+          "7. Error Codes",
+          "7. Error Codes"
+        ],
+        "ticket": {
+          "summary": "Peltier module overheating issue",
+          "priority": "medium",
+          "error_code": "E19",
+          "ticket_id": "MV-90DDCD"
+        },
+        "trace": "[triage -> coordinator] inform\n    intent: troubleshooting\n    urgency: high\n    error_code: E19\n    species: null\n    standalone_question: I got E19 this morning and again now.\n    question: I got E19 this morning and again now.\n[retriever -> coordinator] inform\n    queries: [\"I got E19 this morning and again now.\", \"Error code E19 troubleshooting\", \"MV-200 error E19\", \"E19 fault code on MycoVault MV-200\", \"error code E19\"]\n    chunks: [\"9. Warranty and Service (#10, 0.75)\", \"MycoVault MV-200 User & Service Manual (#0, 0.69)\", \"1. Product Overview (#1, 0.68)\", \"7. Error Codes (#8, 0.67)\", \"7. Error Codes (#7, 0.64)\"]\n[specialist -> coordinator] propose\n    draft: The error code E19 indicates that the Peltier module has overheated. This can be caused by insufficient rear clearance or high room temperature.  To resolve the issue, follow these steps:  1. Check that the unit has at l ...\n[verifier -> coordinator] inform\n    supported: true\n    unsupported_claims: []\n    missing_safety_warning: false\n    feedback: \n[escalation -> coordinator] escalate\n    ticket: {\"summary\": \"Peltier module overheating issue\", \"priority\": \"medium\", \"error_code\": \"E19\", \"ticket_id\": \"MV-90DDCD\"}\n    tool_calls: [{\"tool\": \"create_ticket\", \"arguments\": {\"summary\": \"Peltier module overheating issue\", \"priority\": \"medium\", \"error_code\": \"E19\"}, \"allowed\": true, \"guardrail\": \"matches rule: E19 twice within 24 hours\"}]\n    note: A ticket is required due to the Peltier module overheating issue.\n[coordinator -> user] inform\n    reply: The error code E19 indicates that the Peltier module has overheated. This can be caused by insufficient rear clearance or high room temperature.  To resolve the issue, follow these steps:  1. Check that the unit has at l ...",
+        "facts_string": [
+          false,
+          true
+        ],
+        "facts_judge": [
+          false,
+          false
+        ],
+        "hit": true
+      },
+      {
+        "id": 12,
+        "question": "E23 has been on for 25 minutes.",
+        "answer": "The error code E23 indicates a Firmware integrity error. According to the manual, when this error occurs, the device restores firmware 3.4.2 from backup within 10 minutes. \n\nTo resolve the issue, follow these steps:\n\n1. Do not power off the device.\n2. The device will restore firmware 3.4.2 from backup within 10 minutes.",
+        "seconds": 5.3441328999979305,
+        "llm_calls": 6,
+        "retrieved_sections": [
+          "7. Error Codes",
+          "9. Warranty and Service",
+          "7. Error Codes",
+          "MycoVault MV-200 User & Service Manual",
+          "1. Product Overview"
+        ],
+        "ticket": null,
+        "trace": "[triage -> coordinator] inform\n    intent: troubleshooting\n    urgency: high\n    error_code: E23\n    species: null\n    standalone_question: The device has been on for 25 minutes and has an error code E23.\n    question: E23 has been on for 25 minutes.\n[retriever -> coordinator] inform\n    queries: [\"The device has been on for 25 minutes and has an error code E23.\", \"Error code E23 MV-200\", \"MV-200 operation error E23\", \"MV-200 error code E23 troubleshooting\", \"error code E23\"]\n    chunks: [\"7. Error Codes (#8, 0.74)\", \"9. Warranty and Service (#10, 0.73)\", \"7. Error Codes (#7, 0.68)\", \"MycoVault MV-200 User & Service Manual (#0, 0.65)\", \"1. Product Overview (#1, 0.61)\"]\n[specialist -> coordinator] propose\n    draft: The error code E23 indicates a Firmware integrity error. According to the manual, when this error occurs, the device restores firmware 3.4.2 from backup within 10 minutes.   To resolve the issue, follow these steps:  1.  ...\n[verifier -> coordinator] inform\n    supported: true\n    unsupported_claims: []\n    missing_safety_warning: false\n    feedback: The draft accurately reflects the information provided in the manual regarding error code E23.\n[escalation -> coordinator] inform\n    ticket: null\n    tool_calls: [{\"tool\": \"lookup_error_code\", \"arguments\": {\"code\": \"E23\"}, \"allowed\": true, \"guardrail\": \"ok\"}]\n    note: Since the firmware integrity error (E23) has not cleared within 10 minutes, a ticket is required.  create_ticket(\"Firmware integrity error has not cleared after 10 minutes\", \"high\", \"E23\")\n[coordinator -> user] inform\n    reply: The error code E23 indicates a Firmware integrity error. According to the manual, when this error occurs, the device restores firmware 3.4.2 from backup within 10 minutes.   To resolve the issue, follow these steps:  1.  ...",
+        "facts_string": [
+          true,
+          false
+        ],
+        "facts_judge": [
+          false,
+          true
+        ],
+        "hit": true
+      },
+      {
+        "id": 13,
+        "question": "There is water under the cabinet and a burning smell!",
+        "answer": "**IMMEDIATE ACTION REQUIRED**\n\nUnplug the unit immediately to prevent any further damage or risk of electrical shock.\n\nAccording to [Section: 9. Warranty and Service], if there is any smell of burning, smoke or water leaking under the unit, it is a high-priority issue and the customer must unplug the unit immediately.\n\nPlease contact a service technician (ticket required) as soon as possible, as this is a critical issue that requires immediate attention.\n\nNote: The warranty is void if the unit was opened by a non-authorised person, but in this case, the issue is related to a potential electrical or mechanical problem, not a user error.\n\nI have opened service ticket MV-B1DCFA (high priority); a technician will contact you.",
+        "seconds": 6.267779900001187,
+        "llm_calls": 6,
+        "retrieved_sections": [
+          "1. Product Overview",
+          "9. Warranty and Service",
+          "3. Installation",
+          "7. Error Codes",
+          "MycoVault MV-200 User & Service Manual"
+        ],
+        "ticket": {
+          "summary": "Water leaking and burning smell under the unit.",
+          "priority": "high",
+          "error_code": "",
+          "ticket_id": "MV-B1DCFA"
+        },
+        "trace": "[triage -> coordinator] inform\n    intent: safety\n    urgency: high\n    error_code: null\n    species: null\n    standalone_question: There is water under the cabinet and a burning smell!\n    question: There is water under the cabinet and a burning smell!\n[retriever -> coordinator] inform\n    queries: [\"There is water under the cabinet and a burning smell!\", \"MV-200 water leak detection\", \"Burning smell in MV-200 cabinet\", \"MV-200 humidistat calibration procedure\"]\n    chunks: [\"1. Product Overview (#1, 0.72)\", \"9. Warranty and Service (#10, 0.68)\", \"3. Installation (#3, 0.67)\", \"7. Error Codes (#7, 0.66)\", \"MycoVault MV-200 User & Service Manual (#0, 0.66)\"]\n[specialist -> coordinator] propose\n    draft: **IMMEDIATE ACTION REQUIRED**  Unplug the unit immediately to prevent any further damage or risk of electrical shock.  According to [Section: 9. Warranty and Service], if there is any smell of burning, smoke or water lea ...\n[verifier -> coordinator] inform\n    supported: true\n    unsupported_claims: [\"According to [Section: 9. Warranty and Service], if there is any smell of burning, smoke or water leaking under the unit, it is a high-priority issue and the customer must unplug the unit immediately.\"]\n    missing_safety_warning: false\n    feedback: The claim is supported by the context, but the note at the end is incorrect. The warranty is indeed void if the unit was opened by a non-authorised person, and this situation is not an exception.\n[escalation -> coordinator] escalate\n    ticket: {\"summary\": \"Water leaking and burning smell under the unit.\", \"priority\": \"high\", \"error_code\": \"\", \"ticket_id\": \"MV-B1DCFA\"}\n    tool_calls: [{\"tool\": \"create_ticket\", \"arguments\": {\"summary\": \"Water leaking and burning smell under the unit.\", \"priority\": \"high\", \"error_code\": \"\"}, \"allowed\": true, \"guardrail\": \"matches rule: burning smell, smoke or water lea ...\n    note: The customer must unplug the unit immediately and a ticket has been created.\n[coordinator -> user] inform\n    reply: **IMMEDIATE ACTION REQUIRED**  Unplug the unit immediately to prevent any further damage or risk of electrical shock.  According to [Section: 9. Warranty and Service], if there is any smell of burning, smoke or water lea ...",
+        "facts_string": [
+          true,
+          true
+        ],
+        "facts_judge": [
+          true,
+          true
+        ],
+        "hit": true
+      },
+      {
+        "id": 14,
+        "question": "I recalibrated after E07 three days ago and it's back.",
+        "answer": "The error E07 reappearing after recalibration indicates that the CO2 sensor is still experiencing drift. To resolve this issue, follow these steps:\n\n1. Move the unit to fresh air (or open a window).\n2. Empty the chamber.\n3. Hold FAN + LIGHT for 5 s.\n4. Recalibration will take 8 minutes.\n\nPlease note that if the issue persists, you may need to contact a service technician.",
+        "seconds": 5.281603900002665,
+        "llm_calls": 6,
+        "retrieved_sections": [
+          "9. Warranty and Service",
+          "7. Error Codes",
+          "7. Error Codes",
+          "1. Product Overview",
+          "MycoVault MV-200 User & Service Manual"
+        ],
+        "ticket": null,
+        "trace": "[triage -> coordinator] inform\n    intent: troubleshooting\n    urgency: low\n    error_code: E07\n    species: null\n    standalone_question: I recalibrated after E07 three days ago and it's back.\n    question: I recalibrated after E07 three days ago and it's back.\n[retriever -> coordinator] inform\n    queries: [\"I recalibrated after E07 three days ago and it's back.\", \"Error code E07 recalibration procedure\", \"MV-200 recalibration retention\", \"Error E07 calibration troubleshooting\", \"error code E07\"]\n    chunks: [\"9. Warranty and Service (#10, 0.72)\", \"7. Error Codes (#7, 0.67)\", \"7. Error Codes (#8, 0.66)\", \"1. Product Overview (#1, 0.65)\", \"MycoVault MV-200 User & Service Manual (#0, 0.64)\"]\n[specialist -> coordinator] propose\n    draft: The error E07 reappearing after recalibration indicates that the CO2 sensor is still experiencing drift. To resolve this issue, follow these steps:  1. Move the unit to fresh air (or open a window). 2. Empty the chamber. ...\n[verifier -> coordinator] inform\n    supported: true\n    unsupported_claims: []\n    missing_safety_warning: false\n    feedback: The draft answer is supported by the context. The steps to resolve the issue with the CO2 sensor are accurate and consistent with the information provided in Section 7. Error Codes.\n[escalation -> coordinator] inform\n    ticket: null\n    tool_calls: [{\"tool\": \"lookup_error_code\", \"arguments\": {\"code\": \"E07\"}, \"allowed\": true, \"guardrail\": \"ok\"}]\n    note: Since the CO2 sensor drift (E07) reappeared within 7 days after a recalibration, a ticket is required.   create_ticket(\"CO2 sensor drift after recent recalibration\", \"medium\", \"E07\")\n[coordinator -> user] inform\n    reply: The error E07 reappearing after recalibration indicates that the CO2 sensor is still experiencing drift. To resolve this issue, follow these steps:  1. Move the unit to fresh air (or open a window). 2. Empty the chamber. ...",
+        "facts_string": [
+          true
+        ],
+        "facts_judge": [
+          false
+        ],
+        "hit": true
+      },
+      {
+        "id": 15,
+        "question": "How do I lock the panel so my kids can't change settings?",
+        "answer": "To lock the panel, press and hold the OK button for 3 seconds. This will activate the child lock. To unlock, press and hold OK again for 3 seconds. [Section: 4. Control Panel]",
+        "seconds": 2.8664534999988973,
+        "llm_calls": 4,
+        "retrieved_sections": [
+          "4. Control Panel",
+          "8. Safety",
+          "7. Error Codes",
+          "3. Installation",
+          "7. Error Codes"
+        ],
+        "ticket": null,
+        "trace": "[triage -> coordinator] inform\n    intent: maintenance\n    urgency: low\n    error_code: null\n    species: null\n    standalone_question: How do I lock the panel so my kids can't change settings?\n    question: How do I lock the panel so my kids can't change settings?\n[retriever -> coordinator] inform\n    queries: [\"How do I lock the panel so my kids can't change settings?\", \"Panel locking mechanism\", \"Secure settings protection\", \"Child safety lock procedure\"]\n    chunks: [\"4. Control Panel (#4, 0.76)\", \"8. Safety (#9, 0.56)\", \"7. Error Codes (#8, 0.53)\", \"3. Installation (#3, 0.52)\", \"7. Error Codes (#7, 0.52)\"]\n[specialist -> coordinator] propose\n    draft: To lock the panel, press and hold the OK button for 3 seconds. This will activate the child lock. To unlock, press and hold OK again for 3 seconds. [Section: 4. Control Panel]\n[verifier -> coordinator] inform\n    supported: true\n    unsupported_claims: []\n    missing_safety_warning: false\n    feedback: \n[coordinator -> user] inform\n    reply: To lock the panel, press and hold the OK button for 3 seconds. This will activate the child lock. To unlock, press and hold OK again for 3 seconds. [Section: 4. Control Panel]",
+        "facts_string": [
+          true,
+          true
+        ],
+        "facts_judge": [
+          true,
+          true
+        ],
+        "hit": true
+      },
+      {
+        "id": 16,
+        "question": "Does factory reset delete my Wi-Fi?",
+        "answer": "According to the manual, a factory reset erases custom profiles but not Wi-Fi settings [Section: 4. Control Panel].",
+        "seconds": 3.284044599997287,
+        "llm_calls": 6,
+        "retrieved_sections": [
+          "9. Warranty and Service",
+          "7. Error Codes",
+          "MycoVault MV-200 User & Service Manual",
+          "1. Product Overview",
+          "4. Control Panel"
+        ],
+        "ticket": null,
+        "trace": "[triage -> coordinator] inform\n    intent: troubleshooting\n    urgency: low\n    error_code: null\n    species: null\n    standalone_question: Will a factory reset delete my Wi-Fi?\n    question: Does factory reset delete my Wi-Fi?\n[retriever -> coordinator] inform\n    queries: [\"Will a factory reset delete my Wi-Fi?\", \"Resetting MV-200 to factory settings\", \"MV-200 Wi-Fi configuration after reset\", \"Restoring MV-200 to default settings and Wi-Fi connectivity\"]\n    chunks: [\"9. Warranty and Service (#10, 0.71)\", \"7. Error Codes (#8, 0.69)\", \"MycoVault MV-200 User & Service Manual (#0, 0.68)\", \"1. Product Overview (#1, 0.66)\", \"4. Control Panel (#4, 0.61)\"]\n[specialist -> coordinator] propose\n    draft: According to the manual, a factory reset erases custom profiles but not Wi-Fi settings [Section: 4. Control Panel].\n[verifier -> coordinator] inform\n    supported: true\n    unsupported_claims: []\n    missing_safety_warning: false\n    feedback: The statement is accurate and supported by the manual.\n[escalation -> coordinator] inform\n    ticket: null\n    tool_calls: [{\"tool\": \"lookup_error_code\", \"arguments\": {\"code\": \"\"}, \"allowed\": false, \"guardrail\": \"invalid error code ''\"}]\n    note: A factory reset will not delete your Wi-Fi settings.\n[coordinator -> user] inform\n    reply: According to the manual, a factory reset erases custom profiles but not Wi-Fi settings [Section: 4. Control Panel].",
+        "facts_string": [
+          true,
+          true
+        ],
+        "facts_judge": [
+          false,
+          true
+        ],
+        "hit": true
+      },
+      {
+        "id": 17,
+        "question": "Best temperature for King Trumpet?",
+        "answer": "According to the manual, the ideal temperature for growing King Trumpet mushrooms is 14–17 °C [Section: 2. Technical Specifications].",
+        "seconds": 2.6545270000060555,
+        "llm_calls": 4,
+        "retrieved_sections": [
+          "5. Cultivation Profiles (Fruiting stage)",
+          "1. Product Overview",
+          "8. Safety",
+          "2. Technical Specifications",
+          "3. Installation"
+        ],
+        "ticket": null,
+        "trace": "[triage -> coordinator] inform\n    intent: cultivation\n    urgency: low\n    error_code: null\n    species: King Trumpet\n    standalone_question: What is the ideal temperature for growing King Trumpet mushrooms?\n    question: Best temperature for King Trumpet?\n[retriever -> coordinator] inform\n    queries: [\"What is the ideal temperature for growing King Trumpet mushrooms?\", \"King Trumpet mushroom cultivation temperature range\", \"Optimal temperature for King Trumpet mushroom growth\", \"Temperature requirements for King Trum ...\n    chunks: [\"5. Cultivation Profiles (Fruiting stage) (#5, 0.71)\", \"1. Product Overview (#1, 0.61)\", \"8. Safety (#9, 0.60)\", \"2. Technical Specifications (#2, 0.57)\", \"3. Installation (#3, 0.57)\"]\n[specialist -> coordinator] propose\n    draft: According to the manual, the ideal temperature for growing King Trumpet mushrooms is 14–17 °C [Section: 2. Technical Specifications].\n[verifier -> coordinator] inform\n    supported: true\n    unsupported_claims: []\n    missing_safety_warning: false\n    feedback: \n[coordinator -> user] inform\n    reply: According to the manual, the ideal temperature for growing King Trumpet mushrooms is 14–17 °C [Section: 2. Technical Specifications].",
+        "facts_string": [
+          true
+        ],
+        "facts_judge": [
+          true
+        ],
+        "hit": true
+      },
+      {
+        "id": 18,
+        "question": "Can I grow Psilocybe in the MV-200?",
+        "answer": "This topic is not covered by the MycoVault MV-200 manual, so I cannot advise on it.",
+        "seconds": 2.661282500004745,
+        "llm_calls": 5,
+        "retrieved_sections": [
+          "1. Product Overview",
+          "MycoVault MV-200 User & Service Manual",
+          "8. Safety",
+          "9. Warranty and Service",
+          "5. Cultivation Profiles (Fruiting stage)"
+        ],
+        "ticket": null,
+        "trace": "[triage -> coordinator] inform\n    intent: cultivation\n    urgency: low\n    error_code: null\n    species: Psilocybe\n    standalone_question: Can I grow Psilocybe in the MV-200?\n    question: Can I grow Psilocybe in the MV-200?\n[retriever -> coordinator] inform\n    queries: [\"Can I grow Psilocybe in the MV-200?\", \"Psilocybe cultivation MV-200\", \"MV-200 mycelium growth parameters\", \"Psilocybe spore inoculation guidelines\"]\n    chunks: [\"1. Product Overview (#1, 0.77)\", \"MycoVault MV-200 User & Service Manual (#0, 0.70)\", \"8. Safety (#9, 0.66)\", \"9. Warranty and Service (#10, 0.65)\", \"5. Cultivation Profiles (Fruiting stage) (#5, 0.63)\"]\n[specialist -> coordinator] propose\n    draft: NOT_IN_MANUAL.\n[escalation -> coordinator] inform\n    ticket: null\n    tool_calls: [{\"tool\": \"lookup_error_code\", \"arguments\": {\"code\": \"null\"}, \"allowed\": false, \"guardrail\": \"invalid error code 'NULL'\"}]\n    note: Since there is no error code, no ticket is required.\n[coordinator -> user] inform\n    reply: This topic is not covered by the MycoVault MV-200 manual, so I cannot advise on it.",
+        "refused": true
+      },
+      {
+        "id": 19,
+        "question": "Can I install the latest community firmware 4.0-beta?",
+        "answer": "This topic is not covered by the MycoVault MV-200 manual, so I cannot advise on it.",
+        "seconds": 4.774935800000094,
+        "llm_calls": 7,
+        "retrieved_sections": [
+          "9. Warranty and Service",
+          "MycoVault MV-200 User & Service Manual",
+          "1. Product Overview",
+          "7. Error Codes",
+          "3. Installation"
+        ],
+        "ticket": null,
+        "trace": "[triage -> coordinator] inform\n    intent: maintenance\n    urgency: low\n    error_code: null\n    species: null\n    standalone_question: Can I install the latest community firmware 4.0-beta?\n    question: Can I install the latest community firmware 4.0-beta?\n[retriever -> coordinator] inform\n    queries: [\"Can I install the latest community firmware 4.0-beta?\", \"Firmware update MV-200\", \"Installing community firmware 4.0-beta\", \"MV-200 firmware upgrade procedure\"]\n    chunks: [\"9. Warranty and Service (#10, 0.76)\", \"MycoVault MV-200 User & Service Manual (#0, 0.68)\", \"1. Product Overview (#1, 0.66)\", \"7. Error Codes (#8, 0.58)\", \"3. Installation (#3, 0.58)\"]\n[specialist -> coordinator] propose\n    draft: According to the manual, the warranty is void if unofficial firmware is installed [Section: 9. Warranty and Service]. Therefore, installing the latest community firmware 4.0-beta would void the warranty.\n[verifier -> coordinator] reject\n    supported: false\n    unsupported_claims: [\"the warranty is void if unofficial firmware is installed\"]\n    missing_safety_warning: false\n    feedback: The manual does not mention the community firmware 4.0-beta, and the warranty section only mentions firmware version 3.4.2.\n[specialist -> coordinator] propose\n    draft: Unfortunately, NOT_IN_MANUAL. The manual does not mention the community firmware 4.0-beta, and the warranty section only mentions firmware version 3.4.2.\n[escalation -> coordinator] inform\n    ticket: null\n    tool_calls: [{\"tool\": \"lookup_error_code\", \"arguments\": {\"code\": \"null\"}, \"allowed\": false, \"guardrail\": \"invalid error code 'NULL'\"}]\n    note: Since the error code is null, there is no error to report, and no ticket is required.\n[coordinator -> user] inform\n    reply: This topic is not covered by the MycoVault MV-200 manual, so I cannot advise on it.",
+        "facts_string": [
+          false
+        ],
+        "facts_judge": [
+          false
+        ],
+        "hit": true
+      },
+      {
+        "id": 20,
+        "question": "What is the capital of Australia?",
+        "answer": "I can only help with the MycoVault MV-200.",
+        "seconds": 0.7312971999999718,
+        "llm_calls": 1,
+        "retrieved_sections": [],
+        "ticket": null,
+        "trace": "[triage -> coordinator] inform\n    intent: off_topic\n    urgency: low\n    error_code: null\n    species: null\n    standalone_question: What is the capital of Australia?\n    question: What is the capital of Australia?\n[coordinator -> user] inform\n    reply: I can only help with the MycoVault MV-200.",
+        "refused": true
+      }
+    ]
+  }
+}
