@@ -8,56 +8,60 @@
 
 ## 1. Architecture
 
-```
-Customer
-   │
-   ▼
-Coordinator  ── blackboard (Message envelope) ──► Triage
-   │                                                │
-   │◄───────────────────────────────────────────────┘
-   │
-   ├──► Retriever ──► Knowledge Base (chunk + embed + cosine)
-   │
-   ├──► Specialist (intent-specific prompts)
-   │
-   ├──► Verifier (JSON fact check; up to 2 revisions)  ← ablated on/off in E2
-   │
-   └──► Escalation ──► tools: lookup_error_code, create_ticket
+```mermaid
+flowchart LR
+  Customer --> Coordinator
+  Coordinator --> Triage
+  Coordinator --> Retriever
+  Retriever --> ManualKB
+  Coordinator --> Specialist
+  Coordinator --> Verifier
+  Coordinator --> Escalation
+  Escalation --> TicketTools
+  Coordinator --> Blackboard
 ```
 
-Agents exchange structured `Message(sender, receiver, performative, content, ts)` objects. The coordinator owns conversation state, routes messages, and enforces the retry / escalation policy. Empty retrieval or a `NOT_IN_MANUAL` draft never invents an answer: the system declines or escalates.
+Agents exchange `Message(sender, receiver, performative, content, ts)` on a shared blackboard. The coordinator routes messages and enforces retries / escalation. Empty retrieval or `NOT_IN_MANUAL` never invents an answer.
+
+**B2 cache:** embeddings are stored under `.cache/kb_<chunksize>.npy` + `.json`, keyed by the manual’s SHA-256. Rebuild only if the manual or chunk size changes.
+
+**CLI / history (C2):** `python coordinator.py --trace` keeps conversation history so follow-ups work. Example from a live run: after “My display shows E07…”, the user asked “and how long does that take?”; Triage rewrote it to “How long does recalibration take?” and the system answered **8 minutes** from Section 7.
 
 ---
 
 ## 2. Agent prompts
 
+Full prompts live in `agents.py` / `baseline.py`. Quoted below.
+
 ### Baseline (Part A)
 
 > You are a helpful customer-support agent for the MycoVault MV-200 mushroom growing cabinet.
 
-### Single RAG agent (Part B3)
+### Single RAG (Part B3)
 
-> Answer ONLY from the manual excerpts given between `<context>` and `</context>`. Cite section names as `[Section: <name>]`. If the context does not contain the answer, reply exactly: `NOT_IN_MANUAL`.
+> Answer ONLY from the manual excerpts given between `<context>` and `</context>`. Cite section names as `[Section: <name>]`. Do not add facts not in the context. If the context does not contain the answer, reply exactly: `NOT_IN_MANUAL`.
 
 ### Triage
 
-Classifies `intent` ∈ {troubleshooting, cultivation, maintenance, safety, warranty, off_topic}, `urgency`, `error_code`, `species`, and rewrites a `standalone_question` using history for follow-ups.
+> You classify customer messages for the MycoVault MV-200 helpdesk. Return ONLY JSON with keys: intent (troubleshooting | cultivation | maintenance | safety | warranty | off_topic), urgency (low|medium|high), error_code (e.g. 'E07' or null), species (or null), standalone_question (rewritten to be self-contained). Use conversation history for follow-ups. Device/firmware/warranty questions are never off_topic. Smoke, burning smell or water leaks → safety, high urgency.
 
 ### Retriever
 
-Expands the question into 2–3 alternative search queries (manual vocabulary), merges KB hits, drops chunks with score < τ, returns at most 5.
+> You write search queries for the MycoVault MV-200 manual. Return ONLY JSON `{"queries": [...]}` with 2 or 3 short alternative queries using technical-manual vocabulary (components, error codes, procedures).
 
 ### Specialist (base + intent variants)
 
-Answers only from CONTEXT, cites `[Section: ...]`, never invents numbers. Intent-specific add-ons for troubleshooting (numbered steps), safety (urgent protective action first), maintenance, cultivation, warranty.
+> Write the reply using ONLY CONTEXT. Cite `[Section: <name>]`. Never invent numbers/part numbers/durations/buttons. If unanswered by context: `NOT_IN_MANUAL`. At most 6 sentences.
+
+Intent add-ons: troubleshooting → meaning + numbered steps; safety → urgent protective action first; maintenance → intervals/products/never-use; cultivation → exact profile values; warranty → rules that void warranty.
 
 ### Verifier
 
-Strict fact checker: JSON `{supported, unsupported_claims, missing_safety_warning, feedback}` against CONTEXT.
+> Strict fact checker. CONTEXT + DRAFT → ONLY JSON `{"supported": true|false, "unsupported_claims": [...], "missing_safety_warning": true|false, "feedback": "..."}`.
 
 ### Escalation (`ESCALATION_POLICY`)
 
-Ticket only for Section 9 rules: E19 twice / 24 h (medium); E23 > 10 min (high); E07 back within 7 days (medium); burning smell / smoke / water leak (high, unplug). Guardrails in `tools.py` validate tool calls before execution.
+> Ticket only for Section 9: (1) E19 twice / 24 h → medium; (2) E23 not clear in 10 min → high; (3) E07 back within 7 days after recalibration → medium; (4) burning smell / smoke / water leak → high, unplug. Otherwise no ticket. May call `lookup_error_code`. If ticket needed, call `create_ticket` once. Tools are validated by guardrails in `tools.py` before execution.
 
 ---
 
@@ -65,14 +69,9 @@ Ticket only for Section 9 rules: E19 twice / 24 h (medium); E23 > 10 min (high);
 
 ### Baseline hallucinations (Part A)
 
-Without the manual, `llama3.1:8b` invents fluent but wrong answers, e.g.:
+Without the manual, answers are fluent but invented, e.g. Q9 vinegar soak (manual: 5 % citric + CLEAN); Q10 “E12 LED base” (manual: SporeEye contamination / Quarantine). See §8 Part A reflections.
 
-- **Q9 (descale):** invents vinegar soak steps (manual: 5 % citric acid, CLEAN = MODE+FAN).
-- **Q10 (E12):** invents “E12 LED candelabra bulb” (manual: SporeEye contamination / Quarantine).
-
-It rarely says “I don’t know”.
-
-### Retrieval demo (Task B1)
+### Retrieval demo (Task B1) — `results/partB1_retrieval.txt`
 
 | Query | Top section | Score |
 |-------|-------------|-------|
@@ -80,13 +79,13 @@ It rarely says “I don’t know”.
 | lion's mane humidity | 5. Cultivation Profiles | 0.666 |
 | bleach | 5. Cultivation Profiles | 0.498 |
 
-**Note:** “bleach” does **not** retrieve Maintenance first. Query expansion in the multi-agent Retriever and a wider top-k usually still surface the warranty / maintenance bleach rule.
+“bleach” does **not** hit Maintenance first (failure case §7.1).
 
-### Single RAG (B3) on Q1–10
+### Single RAG (B3) on Q1–10 — `results/partB3_rag.json`
 
-9/10 grounded correctly in the lab run. Q6 (5 GHz-only router) returned `NOT_IN_MANUAL` once (retrieval miss of the 2.4 GHz fact).
+9/10 grounded correctly. Q6 (5 GHz router) once returned `NOT_IN_MANUAL` (retrieval miss of 2.4 GHz).
 
-### Tau sweep
+### Tau sweep — `results/tau_sweep.md`
 
 | τ | hit@5 (in-manual) | mean chunks kept |
 |---|---|---|
@@ -95,25 +94,45 @@ It rarely says “I don’t know”.
 | **0.50** | **17/18** | **4.7** |
 | 0.55 | 16/18 | 3.1 |
 
-Chosen τ = **0.50**. Out-of-manual Q18 still scores ~0.75 at top, so refusal must come from the Specialist / `NOT_IN_MANUAL` path, not from empty retrieval alone.
+Chosen **τ = 0.50**. Q18 (Psilocybe) still scores ~0.75 at top → refusal must come from Specialist / `NOT_IN_MANUAL`, not empty retrieval.
 
 ---
 
 ## 4. D1 demo traces (tools / escalation)
 
-Full blackboard traces: [`results/d1_traces.md`](results/d1_traces.md).
+Summary + one full blackboard excerpt. All three runs: [`results/d1_traces.md`](results/d1_traces.md).
 
 | Case | Question | Ticket |
 |------|----------|--------|
 | No ticket | My display shows E07… | none (`lookup_error_code` only) |
-| Medium | I got E19 this morning and again now. | medium priority |
-| High | Water under the cabinet and a burning smell! | high + unplug |
+| Medium | I got E19 this morning and again now. | medium |
+| High | Water under cabinet + burning smell | high + unplug |
+
+### Example blackboard — no ticket (E07)
+
+```
+[triage -> coordinator] inform
+    intent: troubleshooting  urgency: high  error_code: E07
+    standalone_question: What should I do if my display shows E07?
+[retriever -> coordinator] inform
+    queries: [... "E07 error code" ...]
+    chunks: Error Codes / Warranty / ...
+[specialist -> coordinator] propose
+    draft: ... fresh air ... FAN + LIGHT 5 s ... 8 minutes.
+[verifier -> coordinator] inform
+    supported: true
+[escalation -> coordinator] inform
+    ticket: null
+    tool_calls: lookup_error_code(E07) allowed
+[coordinator -> user] inform
+    reply: (same grounded steps, no ticket)
+```
 
 ---
 
 ## 5. E1 evaluation (20 questions, `llama3.1:8b`)
 
-Source: [`results/eval_table.md`](results/eval_table.md).
+Source: [`results/eval_table.md`](results/eval_table.md), raw JSON `results/eval_llama3.1-8b.json`.
 
 | Metric | Baseline | Single RAG (B3) | Multi-agent |
 |---|---|---|---|
@@ -129,35 +148,43 @@ Source: [`results/eval_table.md`](results/eval_table.md).
 | Mean latency (s / question) | 3.13 | **0.66** | 4.00 |
 | Mean LLM calls / question | 1.00 | 1.00 | 4.95 |
 
-Grounding (RAG / MAS) beats the baseline by a large margin. MAS is slower and more expensive per question than single RAG, but improves fact string match, hit@k, and adds escalation with perfect precision on the tickets it opens.
+Grounding beats baseline. MAS is slower/costlier than single RAG but improves facts, hit@k, and adds escalation (perfect precision on tickets opened).
+
+### Per-question snapshot
+
+| Q | baseline | rag | mas | MAS ticket | gold section hit |
+|---|---|---|---|---|---|
+| 1 | 0/4 | 4/4 | 4/4 | - | yes |
+| 2 | 0/1 | 0/1 | 1/1 | - | yes |
+| 3 | 0/5 | 3/5 | 3/5 | - | yes |
+| 6 | 1/1 | 0/1 | 1/1 | - | yes |
+| 11 | 0/2 | 2/2 | 1/2 | medium | yes |
+| 12 | 0/2 | 1/2 | 1/2 | - | yes |
+| 13 | 1/2 | 0/2 | 2/2 | high | yes |
+| 14 | 0/1 | 1/1 | 1/1 | - | yes |
+| 18 | answered | refused | refused | - | n/a |
+| 20 | answered | refused | refused | - | n/a |
+
+Full 20-row table: `results/eval_table.md`.
 
 ---
 
 ## 6. E2 ablation — Verifier on vs off
 
-**Design choice:** keep `llama3.1:8b` fixed and toggle only the Verifier + revision loop. This avoids loading a second chat model into VRAM (the earlier 3B vs 8B ablation heated the machine).
-
-Source: [`results/ablation_verifier.md`](results/ablation_verifier.md). Verifier ON reuses the E1 multi-agent run.
+Same `llama3.1:8b` (no second model / VRAM swap). Source: [`results/ablation_verifier.md`](results/ablation_verifier.md). ON = E1 MAS run.
 
 | Metric | Verifier ON | Verifier OFF |
 |---|---|---|
 | Fact accuracy (string match) | 83 % | 82 % |
 | Fact accuracy (LLM judge) | 60 % | 63 % |
-| Refusal correctness (Q18, Q20) | 100 % | 100 % |
-| False refusals on in-manual questions | 1 | 0 |
-| Escalation precision | 1.00 | 1.00 |
-| Escalation recall | 0.50 | 0.50 |
+| Refusal correctness | 100 % | 100 % |
 | Escalation F1 | 0.67 | 0.67 |
-| Ticket priority correct | 2/2 | 2/2 |
-| Retrieval hit@k | 100 % | 100 % |
-| Mean latency (s / question) | 4.00 | **2.81** |
-| Mean LLM calls / question | 4.95 | **3.90** |
+| Mean latency (s) | 4.00 | **2.81** |
+| Mean LLM calls | 4.95 | **3.90** |
 
 ### Accuracy / latency trade-off
 
-Turning the Verifier off saves about **1.2 s** and **~1 LLM call** per question (~30 % latency, ~20 % calls) with almost the same fact accuracy on this 20-question set. Escalation metrics are unchanged because tickets are decided by the Escalation agent + Section 9 guardrails, not by the Verifier.
-
-On this small gold set the Verifier does not raise string-match accuracy; the LLM-as-judge even scores OFF slightly higher (noise / judge variance). The Verifier’s value is more about **safety / unsupported-claim filtering** on harder drafts than about mean fact scores here. For a production helpdesk, keeping it ON is still reasonable if latency budget allows; for interactive demos, OFF is much cheaper.
+OFF saves ~1.2 s and ~1 call/question (~30 % latency) with almost the same fact scores. Escalation is unchanged (Section 9 tools/guardrails). On this small set the Verifier does not raise mean accuracy; its role is safety filtering / revisions. Keep ON if latency allows; OFF for cheaper demos.
 
 ---
 
@@ -165,15 +192,15 @@ On this small gold set the Verifier does not raise string-match accuracy; the LL
 
 ### 1. Retrieval ranking for “bleach” (B1)
 
-Embedding search for “bleach” ranked Cultivation / Warranty / Safety above Maintenance, even though the bleach ban lives in Section 6. Dense retrieval alone is weak on rare keywords; query expansion and hybrid BM25 would help.
+Dense search ranked Cultivation / Warranty / Safety above Maintenance. Rare keywords need expansion or hybrid BM25.
 
 ### 2. Escalation recall (Q12 / Q14)
 
-Gold expects tickets for E23 after 25 minutes (high) and E07 returning after recalibration (medium). In E1, MAS opened correct tickets for Q11 and Q13 but missed Q12/Q14 (recall 0.50, precision 1.00). The Escalation LLM sometimes treats the case as “manual action still applies” and does not call `create_ticket`; the guardrail only *blocks* unjustified tickets — it does not force missing ones.
+Gold tickets for E23 > 10 min and E07 back after recalibration were missed (recall 0.50, precision 1.00). Guardrails only block bad tickets; they do not force missing ones.
 
-### 3. Partial facts / false refusal (e.g. Q8, Q19, RAG false refusals)
+### 3. Partial facts / false refusal
 
-Some answers miss a subset of expected key facts (e.g. Lion’s Mane coral: CO₂ / FAN level) even when the right section is retrieved. Single RAG also had 2 false refusals on in-manual questions. Grounding reduces hallucination but can over-refuse when context is incomplete.
+Some answers miss key facts even with the right section (e.g. Lion’s Mane FAN level). RAG had 2 false refusals on in-manual questions — grounding can over-refuse when context is incomplete.
 
 ---
 
@@ -181,28 +208,28 @@ Some answers miss a subset of expected key facts (e.g. Lion’s Mane coral: CO�
 
 ### Part A — baseline (Q1–10)
 
-**1. How many answers are correct according to the manual? How many are confidently wrong?**  
-~0 fully correct. A couple are only vaguely right (bleach / tap water discouraged) but with wrong details. The other ~8–10 are confidently wrong (invented numbers and procedures).
+**1. How many correct / confidently wrong?**  
+~0 fully correct. A couple vaguely right (bleach / tap water) with wrong details; ~8–10 confidently wrong.
 
-**2. Did the model ever say “I don’t know”? Why is this behaviour rare?**  
-No. Chat models are trained to be helpful and complete; with a support-agent prompt and no grounding, fluent guessing beats refusing.
+**2. Did it say “I don’t know”? Why rare?**  
+No. Helpful-completion training + support prompt → fluent guessing beats refusal.
 
-**3. Which wrong answers would be dangerous for a customer (safety, warranty, money)?**  
-Safety: wrong E07/E12 meaning (misses contamination / Quarantine / FFP2); bleach advice that skips CO₂-sensor damage. Warranty/money: “5-year warranty”; vinegar descaling; wrong humidity/filter intervals that can void warranty or ruin a grow.
+**3. Dangerous wrong answers?**  
+Safety: wrong E07/E12 (misses Quarantine/FFP2); bleach without CO₂-sensor warning. Warranty/money: “5-year warranty”; vinegar descaling; wrong humidity/filter intervals.
 
 ### Report (deliverable)
 
-**1. In which sense is your system a multi-agent system and not just a pipeline of function calls?**  
-Each agent has its own goal and decision rule; they talk via structured blackboard messages; the coordinator’s retry/escalation policy can change control flow (reject, `NOT_IN_MANUAL`) — not a fixed function chain.
+**1. MAS vs pipeline?**  
+Own goals/prompts per agent; FIPA-style blackboard messages; coordinator policy can reject / short-circuit — not a fixed call chain.
 
-**2. What does the Verifier catch that the Specialist alone misses? What does it cost?**  
-Unsupported claims / missing safety warnings, with revision feedback. On this set mean fact scores barely change when it is off; cost is ~+1 LLM call and ~+1.2 s per question (E2).
+**2. Verifier value / cost?**  
+Catches unsupported claims & missing safety; on this set mean facts barely change when off. Cost ~+1 call and ~+1.2 s/question (E2).
 
-**3. Same base model for Verifier and Specialist — weakness and mitigation?**  
-Shared blind spots (both may accept the same invented number). Mitigate with a different judge model, rule-based number checks against chunks, or require cited spans.
+**3. Same model Verifier weakness?**  
+Shared blind spots. Mitigate: stronger/different judge, rule checks vs chunks, require cited spans.
 
-**4. Prompt injection via a manual chunk — where and how to defend?**  
-Injected text in retrieved CONTEXT hits Specialist/Verifier prompts. Defend by treating chunks as untrusted data, stripping instruction-like lines, citing only chunk spans, and keeping ticket tools behind the Section 9 guardrail.
+**4. Prompt injection via a chunk?**  
+Injected CONTEXT can steer Specialist/Verifier. Defend: untrusted-data delimiters, strip instruction-like lines, cite spans only, ticket tools behind Section 9 guardrail.
 
 ---
 
@@ -220,4 +247,4 @@ python evaluate.py
 python evaluate.py --ablation verifier
 ```
 
-Main artefacts: `results/partA_baseline.json`, `partB3_rag.json`, `d1_traces.md`, `eval_table.md`, `eval_llama3.1-8b.json`, `ablation_verifier.md`, `tau_sweep.md`.
+Artefacts: `results/partA_baseline.json`, `partB3_rag.json`, `partB1_retrieval.txt`, `d1_traces.md`, `eval_table.md`, `eval_llama3.1-8b.json`, `ablation_verifier.md`, `tau_sweep.md`.
