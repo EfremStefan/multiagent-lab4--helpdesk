@@ -1,2 +1,4 @@
 {"id": "MV-9408ED", "summary": "Peltier module overheating issue", "priority": "medium", "error_code": "E19", "created": "2026-10-28T13:17:05.545798"}
 {"id": "MV-002568", "summary": "Water leaking and burning smell under the unit.", "priority": "high", "error_code": "", "created": "2026-10-28T13:17:11.113299"}
+{"id": "MV-80E60E", "summary": "Peltier module overheating issue", "priority": "medium", "error_code": "E19", "created": "2026-11-03T15:08:27.045503"}
+{"id": "MV-9B7623", "summary": "Water leaking and burning smell under the unit.", "priority": "high", "error_code": "", "created": "2026-11-03T15:08:32.703475"}

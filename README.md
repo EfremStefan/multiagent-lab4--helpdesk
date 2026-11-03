@@ -20,7 +20,16 @@ ollama pull qwen2.5:3b
 ollama pull nomic-embed-text
 ```
 
-## Run
+## Demo notebook (Parts A–E in one place)
+
+```powershell
+cd "E:\MasterSem1\An2Sem1\MultiAgentic AI\lab4_helpdesk"
+python -m jupyter notebook lab4_demo.ipynb
+```
+
+Or open `lab4_demo.ipynb` in Cursor, pick a Python kernel, run top to bottom. Live demos for A–D; Part E loads tables from `results/`. Report answers sit in markdown cells after each part.
+
+## Run (CLI scripts)
 
 ```powershell
 $env:PYTHONIOENCODING = "utf-8"
@@ -47,4 +56,5 @@ E2 ablation is **Verifier on vs off** (same model — no VRAM swap). Verifier ON
 - `coordinator.py` — blackboard, control policy, CLI
 - `evaluate.py` — metrics for baseline / RAG / multi-agent + verifier ablation
 - `results/` — traces, eval tables, `ablation_verifier.md`
+- `lab4_demo.ipynb` — coherent walkthrough (demos + report answers)
 - `REPORT.md` — write-up for submission
